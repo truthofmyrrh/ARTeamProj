@@ -5,40 +5,39 @@ using UnityEngine.XR.ARFoundation;
 
 public class monsterController : MonoBehaviour
 {
+    
+    
+    public float movementSpeed = 0.1f;
+    
     public GameObject target;
-    public float movementSpeed = 0.6f;
-    public  ParticleSystem particle;
     private PlayerInfo pinfo;
     private ARSession arsession;
 
     void Start()
     {
-        target = GameObject.Find("Player");
+        
         arsession = GameObject.FindObjectOfType<ARSession>();
         pinfo = target.GetComponent<PlayerInfo>();
-        particle = GetComponent<ParticleSystem>();
+        target.transform.Translate(Vector3.zero);
+        
     }
  
-    void FixedUpdate()
+    void Update()
     {
         Vector3 forward = target.transform.position - transform.position;
-        transform.Translate(forward * Time.fixedDeltaTime * movementSpeed);
+        
+        transform.Translate(forward.normalized * Time.deltaTime * movementSpeed);
+
+       // Debug.Log("target : " + target.transform.position);
 
     }
 
-    public void setParticlePos(Vector3 pos)
-    {
-        particle.transform.Translate(pos);
-    }
-    public void PlayParticle()
-    {
-
-        //play children as well
-        particle.Play(true);
-    }
+    
+    
 
     private void OnTriggerEnter(Collider other)
     {
+       
         if(other.gameObject.CompareTag("Player"))
         {
             // collision with player
