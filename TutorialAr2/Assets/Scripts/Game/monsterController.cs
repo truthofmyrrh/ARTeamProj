@@ -9,21 +9,23 @@ public class monsterController : MonoBehaviour
     
     public float movementSpeed = 0.1f;
     
-    public GameObject target;
+    private GameObject target;
     private PlayerInfo pinfo;
     private ARSession arsession;
+    
 
     void Start()
     {
         
         arsession = GameObject.FindObjectOfType<ARSession>();
-        pinfo = target.GetComponent<PlayerInfo>();
-        target.transform.Translate(Vector3.zero);
         
+        target = GameObject.Find("AR Session Origin").transform.GetChild(1).gameObject;
+        pinfo = target.GetComponent<PlayerInfo>();
     }
  
     void Update()
     {
+        Debug.Log(target.name);
         Vector3 forward = target.transform.position - transform.position;
         
         transform.Translate(forward.normalized * Time.deltaTime * movementSpeed);
@@ -37,15 +39,17 @@ public class monsterController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
        
-        if(other.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("User"))
         {
+            
             // collision with player
             pinfo.ChangeHealth(pinfo.health - 1);
             
             Destroy(gameObject);
 
-            Debug.Log("oops");
+            
             
             
         }

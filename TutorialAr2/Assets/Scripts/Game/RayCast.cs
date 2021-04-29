@@ -28,8 +28,8 @@ public class RayCast : MonoBehaviour
     private void Update()
     {
 
-        
-            Ray ray = Camera.main.ScreenPointToRay(Touchscreen.current.position.ReadValue());
+
+        Ray ray = Camera.main.ScreenPointToRay(Touchscreen.current.position.ReadValue());
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, layermask))

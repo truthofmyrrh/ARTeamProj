@@ -8,13 +8,21 @@ public class PlayerInfo : MonoBehaviour
     public float health = 3;
     public float coin = 0;
 
+    private GameObject canvas;
     private GameUI ui;
     
     
 
     void Start()
     {
-        ui = GameObject.Find("Canvas").GetComponent<GameUI>();
+        canvas = GameObject.Find("Canvas");
+        ui = canvas.GetComponent<GameUI>();
+        ui.UpdateStat();
+        if (ui == null)
+        {
+            Debug.Log("Could not get a ui scripts");
+            Application.Quit();
+        }
     }
 
     public void ChangeHealth(float value)

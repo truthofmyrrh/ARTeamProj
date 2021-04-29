@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TestTouch : MonoBehaviour
 {
+    public GameObject bullet;
+
     private InputManager inputManager;
     private Camera cameraMain;
     private ParticleSystem particle;
@@ -33,12 +35,12 @@ public class TestTouch : MonoBehaviour
     public void Move(Vector2 screenPosition, float time)
     {
         Vector3 screenCoordinates = new Vector3(screenPosition.x , screenPosition.y, raycast.getHitpos().z);
-        Debug.Log("Screen Coordinates : " + screenCoordinates.x +" " + screenCoordinates.y + " " + screenCoordinates.z);
+       
         Vector3 worldCoordinate = cameraMain.ScreenToWorldPoint(screenCoordinates);
-        Debug.Log("World" + worldCoordinate.x + "," + worldCoordinate.y +","+worldCoordinate.z);
+ 
         //worldCoordinate.z = 0;
         transform.position = worldCoordinate;
-
+        Instantiate(bullet, cameraMain.transform.position, cameraMain.transform.rotation);
         particle.transform.Translate(worldCoordinate);
         particle.Play(true);
     }

@@ -7,18 +7,21 @@ public class GameUI : MonoBehaviour
     public TextMeshProUGUI coin;
     public TextMeshProUGUI health;
 
-    private PlayerInfo pinfo;
+    private GameObject player;
+    private PlayerInfo pinfo ;
     
     // Start is called before the first frame update
     void Start()
     {
-        pinfo = GameObject.Find("Player").GetComponent<PlayerInfo>();
-        UpdateStat();
+        player = GameObject.Find("Player");
+        pinfo = player.GetComponent<PlayerInfo>();
+        
         
     }
 
     public void UpdateStat()
     {
+        Debug.Log("p coin " + pinfo.coin + " health " +pinfo.health);
         coin.text = "Coin : " + pinfo.coin;
         health.text = "Health : " + pinfo.health;
 
