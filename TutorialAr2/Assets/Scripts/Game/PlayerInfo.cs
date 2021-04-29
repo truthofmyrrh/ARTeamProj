@@ -10,11 +10,13 @@ public class PlayerInfo : MonoBehaviour
 
     private GameObject canvas;
     private GameUI ui;
+    private GameManagement gameManager;
     
     
 
     void Start()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManagement>();
         canvas = GameObject.Find("Canvas");
         ui = canvas.GetComponent<GameUI>();
         ui.UpdateStat();
@@ -27,12 +29,20 @@ public class PlayerInfo : MonoBehaviour
 
     public void ChangeHealth(float value)
     {
+        if(value <= 0)
+        {
+            gameManager.Lose();
+        }
         health = value;
         ui.UpdateStat();
     }
 
     public void ChangeCoin(float value)
     {
+        if(value == gameManager.Goal)
+        {
+            gameManager.Win();
+        }
         coin = value;
         ui.UpdateStat();
     }
