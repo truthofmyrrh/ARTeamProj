@@ -1,21 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp.dll:
-    - Bullet
-    - GameManagement
-    - GameUI
-    - InputManager
-    - PlayerInfo
-    - RayCast
-    - SpawnEnemies
-    - TestTouch
-    - monsterController
-    - navigation
+    Main.dll:
+    - CameraRotator
+    - ShootAR.BgmManager
+    - ShootAR.GameManager
+    - ShootAR.GameState
+    - ShootAR.Menu.HighscoreTable
+    - ShootAR.Menu.MenuManager
+    - ShootAR.Menu.MuteBgm
+    - ShootAR.Menu.MuteButton
+    - ShootAR.NameAsker
+    - ShootAR.Player
+    - ShootAR.ScoreManager
+    - ShootAR.UIManager
     Unity.CollabProxy.Editor.dll:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.InputSystem.dll:
-    - UnityEngine.InputSystem.EnhancedTouch.TouchSimulation
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
@@ -25,6 +26,8 @@ ScriptsOnlyBuild:
     Unity.Mobile.AndroidLogcat.Editor.dll:
     - Unity.Android.Logcat.AndroidLogcatConsoleWindow
     - Unity.Android.Logcat.AndroidLogcatManager
+    Unity.ProBuilder.dll:
+    - UnityEngine.ProBuilder.ProBuilderMesh
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -38,15 +41,6 @@ ScriptsOnlyBuild:
     - UnityEditor.XR.ARCore.ARCoreSettings
     Unity.XR.ARCore.dll:
     - UnityEngine.XR.ARCore.ARCoreLoader
-    Unity.XR.ARFoundation.dll:
-    - UnityEngine.XR.ARFoundation.ARCameraBackground
-    - UnityEngine.XR.ARFoundation.ARCameraManager
-    - UnityEngine.XR.ARFoundation.ARInputManager
-    - UnityEngine.XR.ARFoundation.ARPlane
-    - UnityEngine.XR.ARFoundation.ARPlaneMeshVisualizer
-    - UnityEngine.XR.ARFoundation.ARPoseDriver
-    - UnityEngine.XR.ARFoundation.ARSession
-    - UnityEngine.XR.ARFoundation.ARSessionOrigin
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
@@ -58,15 +52,17 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.AspectRatioFitter
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
-    - UnityEngine.UI.Toggle
   sceneClasses:
-    Assets/Scences/GamePlay/Stage1.unity:
+    Assets/Scences/GamePlay/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -82,756 +78,19 @@ ScriptsOnlyBuild:
     - Class: 33
       Script: {instanceID: 0}
     - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1594}
-    - Class: 114
-      Script: {instanceID: 1742}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2426}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2744}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3444}
-    - Class: 114
-      Script: {instanceID: 3738}
-    - Class: 114
-      Script: {instanceID: 3746}
-    - Class: 114
-      Script: {instanceID: 3870}
-    - Class: 114
-      Script: {instanceID: 3930}
-    - Class: 114
-      Script: {instanceID: 4066}
-    - Class: 114
-      Script: {instanceID: 4260}
-    - Class: 114
-      Script: {instanceID: 4292}
-    - Class: 114
-      Script: {instanceID: 4340}
-    - Class: 114
-      Script: {instanceID: 4352}
-    - Class: 114
-      Script: {instanceID: 4710}
-    - Class: 114
-      Script: {instanceID: 4720}
-    - Class: 114
-      Script: {instanceID: 4788}
-    - Class: 114
-      Script: {instanceID: 5326}
-    - Class: 114
-      Script: {instanceID: 5768}
-    - Class: 114
-      Script: {instanceID: 19206}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 120
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 136
-      Script: {instanceID: 0}
-    - Class: 137
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/Gun/GUN_AK47.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/Gun/GUN_Bennelli_M4.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/Gun/GUN_M107.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/Gun/GUN_M1911 1.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/Gun/GUN_M249.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/Gun/GUN_UZI.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/MainScene.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2290}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 114
-      Script: {instanceID: 4828}
-    - Class: 114
-      Script: {instanceID: 4956}
-    - Class: 114
-      Script: {instanceID: 5314}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/Result_fail.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/Result_suc.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/Settings.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1756}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/StageSelect.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -841,24 +100,50 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1512}
     - Class: 114
-      Script: {instanceID: 1930}
+      Script: {instanceID: 1656}
     - Class: 114
-      Script: {instanceID: 2166}
+      Script: {instanceID: 1904}
     - Class: 114
-      Script: {instanceID: 2300}
+      Script: {instanceID: 2268}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2278}
     - Class: 114
-      Script: {instanceID: 2860}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2846}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 2904}
     - Class: 114
-      Script: {instanceID: 3340}
+      Script: {instanceID: 3070}
     - Class: 114
-      Script: {instanceID: 3500}
+      Script: {instanceID: 3486}
+    - Class: 114
+      Script: {instanceID: 3712}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 4308}
+    - Class: 114
+      Script: {instanceID: 4328}
+    - Class: 114
+      Script: {instanceID: 4344}
+    - Class: 114
+      Script: {instanceID: 4784}
+    - Class: 114
+      Script: {instanceID: 4824}
+    - Class: 114
+      Script: {instanceID: 4954}
+    - Class: 114
+      Script: {instanceID: 5288}
+    - Class: 114
+      Script: {instanceID: 5318}
+    - Class: 114
+      Script: {instanceID: 5818}
+    - Class: 114
+      Script: {instanceID: 5826}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -868,73 +153,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
-    Assets/Scences/Store/Gun.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
@@ -945,7 +163,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scences/Store/Item.unity:
+    Assets/Scences/GamePlay/Stage2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -954,19 +172,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -975,99 +189,56 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1512}
     - Class: 114
-      Script: {instanceID: 1930}
+      Script: {instanceID: 2278}
     - Class: 114
-      Script: {instanceID: 2166}
+      Script: {instanceID: 2428}
     - Class: 114
-      Script: {instanceID: 2300}
+      Script: {instanceID: 2444}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2486}
     - Class: 114
-      Script: {instanceID: 2860}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2828}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 2846}
     - Class: 114
-      Script: {instanceID: 3340}
+      Script: {instanceID: 3070}
     - Class: 114
-      Script: {instanceID: 3500}
+      Script: {instanceID: 3130}
+    - Class: 114
+      Script: {instanceID: 3178}
+    - Class: 114
+      Script: {instanceID: 3424}
+    - Class: 114
+      Script: {instanceID: 3486}
+    - Class: 114
+      Script: {instanceID: 3712}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 4344}
+    - Class: 114
+      Script: {instanceID: 4408}
+    - Class: 114
+      Script: {instanceID: 4784}
+    - Class: 114
+      Script: {instanceID: 4916}
+    - Class: 114
+      Script: {instanceID: 5760}
+    - Class: 114
+      Script: {instanceID: 5826}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 135
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scences/Store/Store.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1930}
-    - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
-      Script: {instanceID: 2300}
-    - Class: 114
-      Script: {instanceID: 2704}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3340}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -1140,6 +311,12 @@ ScriptsOnlyBuild:
     className: TransitionArmModel
   - hash:
       serializedVersion: 2
+      Hash: d292f1fed523e32e6ce7110f5f6e3221
+    assemblyName: Main.dll
+    namespaceName: ShootAR.Menu
+    className: MenuManager
+  - hash:
+      serializedVersion: 2
       Hash: 9c7c87712e298256d276eb96e02a57b1
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
@@ -1188,6 +365,12 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: b5d01a44c9a694c6b9bce4626dd0a12e
+    assemblyName: Main.dll
+    namespaceName: ShootAR.Menu
+    className: ListElement
+  - hash:
+      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1224,10 +407,22 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: BulletCapsule
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: SimpleScript
+  - hash:
+      serializedVersion: 2
+      Hash: d40f1a4a7c90d3980cab4629c8778cfa
+    assemblyName: Main.dll
+    namespaceName: ShootAR.Enemies
+    className: Drone
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1243,7 +438,7 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
+    assemblyName: Main.dll
     namespaceName: 
     className: navigation
   - hash:
@@ -1285,9 +480,9 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
+    assemblyName: Main.dll
     namespaceName: 
-    className: InputManager
+    className: CameraRotator
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
@@ -1302,10 +497,28 @@ ScriptsOnlyBuild:
     className: InputActionEditorWindow
   - hash:
       serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: HealthCapsule
+  - hash:
+      serializedVersion: 2
       Hash: 9b6303c7164a38e06044ec2036c18b6b
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARParticipantManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: GameState
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Main.dll
+    namespaceName: ShootAR.Menu
+    className: ListSelectionController
   - hash:
       serializedVersion: 2
       Hash: fc169718e5fd24cea7425f24908c0418
@@ -1332,6 +545,12 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
+      Hash: 67d8d0e852ed8ed3a0ed2dc1a6b66b4b
+    assemblyName: Main.dll
+    namespaceName: ShootAR.Enemies
+    className: EnemyBullet
+  - hash:
+      serializedVersion: 2
       Hash: 4d16cfbaa8e821a2b370e80844a0e9bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1342,12 +561,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARCameraManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Rotate
   - hash:
       serializedVersion: 2
       Hash: 290afc8da8e459e0b8dc7444bfaf5e35
@@ -1404,16 +617,22 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: c91c24b7d3b6b2991572f426b51baff3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RaycastExample
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextSelector_A
+  - hash:
+      serializedVersion: 2
+      Hash: cfe70028229a91bc903c6f92781741ad
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: Spawner
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: PowerUpCapsule
   - hash:
       serializedVersion: 2
       Hash: 0c5108545fb925730d4d5887ebcdd20c
@@ -1438,12 +657,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
-  - hash:
-      serializedVersion: 2
-      Hash: 1316f340167b8e3eb81f78e8d00573d8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RayCastingExample1
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -1476,10 +689,22 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: efd40aebaf36a021be3718e9cc13c3ba
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: Player
+  - hash:
+      serializedVersion: 2
       Hash: 6663435805926faf16934aed992cd26b
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: Benchmark03
+  - hash:
+      serializedVersion: 2
+      Hash: 4eac54818755f0212168add7c6792be4
+    assemblyName: Main.dll
+    namespaceName: ShootAR.Menu
+    className: WaveEditor
   - hash:
       serializedVersion: 2
       Hash: 1268406d3f2e4b2c2b670b560b6db769
@@ -1504,12 +729,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Scrollbar
-  - hash:
-      serializedVersion: 2
-      Hash: 2405c4962b0815da60cab2a20badc659
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ImageTrack
   - hash:
       serializedVersion: 2
       Hash: 5dea360fb0b147724ac344e6f399c2f3
@@ -1542,16 +761,16 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: NameAsker
+  - hash:
+      serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
-  - hash:
-      serializedVersion: 2
-      Hash: 233b5774077b735934cc2905b7068f83
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameUI
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -1620,6 +839,12 @@ ScriptsOnlyBuild:
     className: InputActionAssetEditor
   - hash:
       serializedVersion: 2
+      Hash: 1c15176406148201d8e3485c2d160143
+    assemblyName: Main.dll
+    namespaceName: ShootAR.Menu
+    className: MuteButton
+  - hash:
+      serializedVersion: 2
       Hash: bd3f0ca738703903e759f77536ed74fd
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1656,6 +881,12 @@ ScriptsOnlyBuild:
     className: ARAnchorManager
   - hash:
       serializedVersion: 2
+      Hash: ec49e9f896d86074207aa1e58683fe1e
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: Portal
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -1669,7 +900,7 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
+    assemblyName: Main.dll
     namespaceName: 
     className: SceneChange
   - hash:
@@ -1690,12 +921,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
-  - hash:
-      serializedVersion: 2
-      Hash: 2c50ba461c9b78ac09e8e0d20ae8b30d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TestTouch
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1738,12 +963,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TextMeshProFloatingText
-  - hash:
-      serializedVersion: 2
-      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Bullet
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -1800,22 +1019,10 @@ ScriptsOnlyBuild:
     className: TMP_TextEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 131f425607820796717868b02ff18299
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: monsterController
-  - hash:
-      serializedVersion: 2
       Hash: 7f5c55cb7b3151ce240452eb85500d32
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARPlaneManager
-  - hash:
-      serializedVersion: 2
-      Hash: 1ae18367d714fd8ad6a6171e55cc7653
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RayCast
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1830,10 +1037,22 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: 0e1d9b8dabf3244421c1f30947e2bfc4
+    assemblyName: Main.dll
+    namespaceName: ShootAR.Menu
+    className: HighscoreTable
+  - hash:
+      serializedVersion: 2
       Hash: 6be939d6f0aad748aa63a8815400aaa2
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: InputSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: BgmManager
   - hash:
       serializedVersion: 2
       Hash: 625e4fd6f88b90d1ee9e7c089c3f450d
@@ -1876,6 +1095,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARCore.dll
     namespaceName: UnityEngine.XR.ARCore
     className: ARCoreLoaderSettings
+  - hash:
+      serializedVersion: 2
+      Hash: ac7c20cb4a2a413a31b2b79490aa6fca
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: UIManager
   - hash:
       serializedVersion: 2
       Hash: f6633ace6e530c0000f2ac6da4269c52
@@ -1932,10 +1157,10 @@ ScriptsOnlyBuild:
     className: InputDebuggerWindow
   - hash:
       serializedVersion: 2
-      Hash: 60a6e5b43b3dc14a5f1fb799aacac7c5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerInfo
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: Bullet
   - hash:
       serializedVersion: 2
       Hash: e1c35cdce946e9da77fe80a39c261608
@@ -2004,6 +1229,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: a69cb593c4fb697ce2987576fef60fe8
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -2070,6 +1301,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 67d8d0e852ed8ed3a0ed2dc1a6b66b4b
+    assemblyName: Main.dll
+    namespaceName: ShootAR.Enemies
+    className: Crasher
+  - hash:
+      serializedVersion: 2
       Hash: 1bc03a501323d00d0037a6b76d25a3ba
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -2092,6 +1329,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DropdownSample
+  - hash:
+      serializedVersion: 2
+      Hash: 1f9c927ed19d38303244a45feaf2413c
+    assemblyName: Main.dll
+    namespaceName: ShootAR.Menu
+    className: MuteBgm
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2122,6 +1365,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: VertexColorCycler
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: ArmorCapsule
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -2178,16 +1427,22 @@ ScriptsOnlyBuild:
     className: VertexZoom
   - hash:
       serializedVersion: 2
+      Hash: c1aa24dc179be0cb7c6d49f66fc0db8a
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARRaycastManager
+  - hash:
+      serializedVersion: 2
       Hash: 11319334e5365797f8056694f9b5dae4
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: ObjectSpin
   - hash:
       serializedVersion: 2
-      Hash: c1aa24dc179be0cb7c6d49f66fc0db8a
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARRaycastManager
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: Boundary
   - hash:
       serializedVersion: 2
       Hash: 0535c7e7c34dd1cdfc5b1f8ffce1aebe
@@ -2226,16 +1481,16 @@ ScriptsOnlyBuild:
     className: PlayerInputManager
   - hash:
       serializedVersion: 2
+      Hash: 81e64de59d18a7adb48a383965185cae
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: ScoreManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 5044778eed25e8d17c7bc0d06272b9ac
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SpawnEnemies
   - hash:
       serializedVersion: 2
       Hash: 05655f7deb066a961c41619ac9e98263
@@ -2272,27 +1527,8 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
-  - hash:
-      serializedVersion: 2
-      Hash: b2e2936d715887c002aaef0ddaf7a7e5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManagement
   platform: 13
   scenePathNames:
-  - Assets/Scences/MainScene.unity
-  - Assets/Scences/Store/Item.unity
-  - Assets/Scences/Gun/GUN_M107.unity
-  - Assets/Scences/Settings.unity
-  - Assets/Scences/Store/Store.unity
-  - Assets/Scences/Gun/GUN_UZI.unity
-  - Assets/Scences/Gun/GUN_M1911 1.unity
-  - Assets/Scences/StageSelect.unity
-  - Assets/Scences/Result_suc.unity
-  - Assets/Scences/Result_fail.unity
-  - Assets/Scences/Gun/GUN_M249.unity
-  - Assets/Scences/Store/Gun.unity
-  - Assets/Scences/Gun/GUN_AK47.unity
-  - Assets/Scences/Gun/GUN_Bennelli_M4.unity
-  - Assets/Scences/GamePlay/Stage1.unity
-  playerPath: C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/TutorialAr2/app2.apk
+  - Assets/Scences/GamePlay/MainMenu.unity
+  - Assets/Scences/GamePlay/Stage2.unity
+  playerPath: C:/Users/sieun/UnityProjects/TutorialAr2/APK/test.apk

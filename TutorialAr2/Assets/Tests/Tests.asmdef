@@ -1,0 +1,13 @@
+{
+    "name": "Tests",
+    "references": ["Main", "Menu"],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

@@ -356,8 +356,34 @@ MonoBehaviour:
     - Assets/Material.meta
     - Assets/Material/Black.mat
     - Assets/Material/Black.mat.meta
+    - Assets/Material/Drone.meta
+    - Assets/Material/Drone/Drone.mat
+    - Assets/Material/Drone/Drone.mat.meta
+    - Assets/Material/Drone/Drone_Albedo.mat
+    - Assets/Material/Drone/Drone_Albedo.mat.meta
+    - Assets/Material/Drone/Drone_Albedo.png
+    - Assets/Material/Drone/Drone_Albedo.png.meta
+    - Assets/Material/Drone/Drone_Emission.png
+    - Assets/Material/Drone/Drone_Emission.png.meta
+    - Assets/Material/Drone/Drone_HeightMap.png
+    - Assets/Material/Drone/Drone_HeightMap.png.meta
+    - Assets/Material/Drone/Drone_NormalMap.png
+    - Assets/Material/Drone/Drone_NormalMap.png.meta
+    - Assets/Material/Drone/Drone_Occlusion.png
+    - Assets/Material/Drone/Drone_Occlusion.png.meta
+    - Assets/Material/Drone/Drone_Specular.tga
+    - Assets/Material/Drone/Drone_Specular.tga.meta
     - Assets/Material/Ground.mat
     - Assets/Material/Ground.mat.meta
+    - Assets/Material/Menu.meta
+    - Assets/Material/Menu/musicoff.mat
+    - Assets/Material/Menu/musicoff.mat.meta
+    - Assets/Material/Menu/musicon.mat
+    - Assets/Material/Menu/musicon.mat.meta
+    - Assets/Material/Menu/soundoff.mat
+    - Assets/Material/Menu/soundoff.mat.meta
+    - Assets/Material/Menu/soundon.mat
+    - Assets/Material/Menu/soundon.mat.meta
     - Assets/Material/New Material 1.mat
     - Assets/Material/New Material 1.mat.meta
     - Assets/Material/New Material.mat
@@ -422,20 +448,20 @@ MonoBehaviour:
     - Assets/Prefabs.meta
     - Assets/Prefabs/ARplanePrefab.prefab
     - Assets/Prefabs/ARplanePrefab.prefab.meta
-    - Assets/Prefabs/Bullet.prefab
-    - Assets/Prefabs/Bullet.prefab.meta
-    - Assets/Prefabs/Canvas.prefab
-    - Assets/Prefabs/Canvas.prefab.meta
     - Assets/Prefabs/Player.prefab
     - Assets/Prefabs/Player.prefab.meta
+    - Assets/Prefabs/Player2.prefab
+    - Assets/Prefabs/Player2.prefab.meta
     - Assets/Prefabs/SceneChanger.prefab
     - Assets/Prefabs/SceneChanger.prefab.meta
     - Assets/Prefabs/Toon Chicken.prefab
     - Assets/Prefabs/Toon Chicken.prefab.meta
     - Assets/Scences.meta
     - Assets/Scences/GamePlay.meta
-    - Assets/Scences/GamePlay/Stage1.unity
-    - Assets/Scences/GamePlay/Stage1.unity.meta
+    - Assets/Scences/GamePlay/MainMenu.unity
+    - Assets/Scences/GamePlay/MainMenu.unity.meta
+    - Assets/Scences/GamePlay/Stage2.unity
+    - Assets/Scences/GamePlay/Stage2.unity.meta
     - Assets/Scences/Gun.meta
     - Assets/Scences/Gun/GUN_AK47.unity
     - Assets/Scences/Gun/GUN_AK47.unity.meta
@@ -449,18 +475,12 @@ MonoBehaviour:
     - Assets/Scences/Gun/GUN_M249.unity.meta
     - Assets/Scences/Gun/GUN_UZI.unity
     - Assets/Scences/Gun/GUN_UZI.unity.meta
-    - Assets/Scences/MainScene.unity
-    - Assets/Scences/MainScene.unity.meta
     - Assets/Scences/Result_fail.unity
     - Assets/Scences/Result_fail.unity.meta
     - Assets/Scences/Result_suc.unity
     - Assets/Scences/Result_suc.unity.meta
     - Assets/Scences/Settings.unity
     - Assets/Scences/Settings.unity.meta
-    - Assets/Scences/Stage1.unity
-    - Assets/Scences/Stage1.unity.meta
-    - Assets/Scences/StageSelect.unity
-    - Assets/Scences/StageSelect.unity.meta
     - Assets/Scences/Store.meta
     - Assets/Scences/Store/Gun.unity
     - Assets/Scences/Store/Gun.unity.meta
@@ -469,42 +489,84 @@ MonoBehaviour:
     - Assets/Scences/Store/Store.unity
     - Assets/Scences/Store/Store.unity.meta
     - Assets/Scripts.meta
+    - Assets/Scripts/BgmManager.cs
+    - Assets/Scripts/BgmManager.cs.meta
+    - Assets/Scripts/Configuration.cs
+    - Assets/Scripts/Configuration.cs.meta
     - Assets/Scripts/Game.meta
+    - Assets/Scripts/Game/Boundary.cs
+    - Assets/Scripts/Game/Boundary.cs.meta
     - Assets/Scripts/Game/Bullet.cs
     - Assets/Scripts/Game/Bullet.cs.meta
-    - Assets/Scripts/Game/GameManagement.cs
-    - Assets/Scripts/Game/GameManagement.cs.meta
-    - Assets/Scripts/Game/GameUI.cs
-    - Assets/Scripts/Game/GameUI.cs.meta
-    - Assets/Scripts/Game/PlayerInfo.cs
-    - Assets/Scripts/Game/PlayerInfo.cs.meta
-    - Assets/Scripts/Game/RayCast.cs
-    - Assets/Scripts/Game/RayCast.cs.meta
-    - Assets/Scripts/Game/RayCastingExample1.cs
-    - Assets/Scripts/Game/RayCastingExample1.cs.meta
-    - Assets/Scripts/Game/RaycastExample.cs
-    - Assets/Scripts/Game/RaycastExample.cs.meta
-    - Assets/Scripts/Game/Rotate.cs
-    - Assets/Scripts/Game/Rotate.cs.meta
-    - Assets/Scripts/Game/SpawnEnemies.cs
-    - Assets/Scripts/Game/SpawnEnemies.cs.meta
-    - Assets/Scripts/Game/monsterController.cs
-    - Assets/Scripts/Game/monsterController.cs.meta
-    - Assets/Scripts/ImageTrack.cs
-    - Assets/Scripts/ImageTrack.cs.meta
-    - Assets/Scripts/InputManager.cs
-    - Assets/Scripts/InputManager.cs.meta
-    - Assets/Scripts/SceneNavigation.meta
-    - Assets/Scripts/SceneNavigation/SceneChange.cs
-    - Assets/Scripts/SceneNavigation/SceneChange.cs.meta
-    - Assets/Scripts/SceneNavigation/navigation.cs
-    - Assets/Scripts/SceneNavigation/navigation.cs.meta
-    - Assets/Scripts/TestTouch.cs
-    - Assets/Scripts/TestTouch.cs.meta
-    - Assets/Scripts/TouchControl.cs
-    - Assets/Scripts/TouchControl.cs.meta
-    - Assets/Scripts/TouchControl.inputactions
-    - Assets/Scripts/TouchControl.inputactions.meta
+    - Assets/Scripts/Game/CameraRotator.cs
+    - Assets/Scripts/Game/CameraRotator.cs.meta
+    - Assets/Scripts/Game/Capsule.meta
+    - Assets/Scripts/Game/Capsule/ArmorCapsule.cs
+    - Assets/Scripts/Game/Capsule/ArmorCapsule.cs.meta
+    - Assets/Scripts/Game/Capsule/BulletCapsule.cs
+    - Assets/Scripts/Game/Capsule/BulletCapsule.cs.meta
+    - Assets/Scripts/Game/Capsule/Capsule.cs
+    - Assets/Scripts/Game/Capsule/Capsule.cs.meta
+    - Assets/Scripts/Game/Capsule/HealthCapsule.cs
+    - Assets/Scripts/Game/Capsule/HealthCapsule.cs.meta
+    - Assets/Scripts/Game/Capsule/PowerUpCapsule.cs
+    - Assets/Scripts/Game/Capsule/PowerUpCapsule.cs.meta
+    - Assets/Scripts/Game/Enemies.meta
+    - Assets/Scripts/Game/Enemies/Boopboop.cs
+    - Assets/Scripts/Game/Enemies/Boopboop.cs.meta
+    - Assets/Scripts/Game/Enemies/Crasher.cs
+    - Assets/Scripts/Game/Enemies/Crasher.cs.meta
+    - Assets/Scripts/Game/Enemies/Drone.cs
+    - Assets/Scripts/Game/Enemies/Drone.cs.meta
+    - Assets/Scripts/Game/Enemies/Enemy.cs
+    - Assets/Scripts/Game/Enemies/Enemy.cs.meta
+    - Assets/Scripts/Game/Enemies/EnemyBullet.cs
+    - Assets/Scripts/Game/Enemies/EnemyBullet.cs.meta
+    - Assets/Scripts/Game/Enemies/Pyoopyoo.cs
+    - Assets/Scripts/Game/Enemies/Pyoopyoo.cs.meta
+    - Assets/Scripts/Game/GameManager.cs
+    - Assets/Scripts/Game/GameManager.cs.meta
+    - Assets/Scripts/Game/GameState.cs
+    - Assets/Scripts/Game/GameState.cs.meta
+    - Assets/Scripts/Game/Orbit.cs
+    - Assets/Scripts/Game/Orbit.cs.meta
+    - Assets/Scripts/Game/Player.cs
+    - Assets/Scripts/Game/Player.cs.meta
+    - Assets/Scripts/Game/Portal.cs
+    - Assets/Scripts/Game/Portal.cs.meta
+    - Assets/Scripts/Game/Prefabs.cs
+    - Assets/Scripts/Game/Prefabs.cs.meta
+    - Assets/Scripts/Game/ScoreManager.cs
+    - Assets/Scripts/Game/ScoreManager.cs.meta
+    - Assets/Scripts/Game/Spawnable.cs
+    - Assets/Scripts/Game/Spawnable.cs.meta
+    - Assets/Scripts/Game/Spawner.cs
+    - Assets/Scripts/Game/Spawner.cs.meta
+    - Assets/Scripts/Game/UIManager.cs
+    - Assets/Scripts/Game/UIManager.cs.meta
+    - Assets/Scripts/Main.asmdef
+    - Assets/Scripts/Main.asmdef.meta
+    - Assets/Scripts/Menu.meta
+    - Assets/Scripts/Menu/HighscoreTable.cs
+    - Assets/Scripts/Menu/HighscoreTable.cs.meta
+    - Assets/Scripts/Menu/ListElement.cs
+    - Assets/Scripts/Menu/ListElement.cs.meta
+    - Assets/Scripts/Menu/ListSelectionController.cs
+    - Assets/Scripts/Menu/ListSelectionController.cs.meta
+    - Assets/Scripts/Menu/LocalFiles.cs
+    - Assets/Scripts/Menu/LocalFiles.cs.meta
+    - Assets/Scripts/Menu/MenuManager.cs
+    - Assets/Scripts/Menu/MenuManager.cs.meta
+    - Assets/Scripts/Menu/MuteBgm.cs
+    - Assets/Scripts/Menu/MuteBgm.cs.meta
+    - Assets/Scripts/Menu/MuteButton.cs
+    - Assets/Scripts/Menu/MuteButton.cs.meta
+    - Assets/Scripts/Menu/ScoreList.cs
+    - Assets/Scripts/Menu/ScoreList.cs.meta
+    - Assets/Scripts/Menu/WaveEditor.cs
+    - Assets/Scripts/Menu/WaveEditor.cs.meta
+    - Assets/Scripts/NameAsker.cs
+    - Assets/Scripts/NameAsker.cs.meta
     - Assets/SimpleFX.meta
     - Assets/SimpleFX/Materials.meta
     - Assets/SimpleFX/Materials/FX_Base.mat
@@ -592,8 +654,39 @@ MonoBehaviour:
     - Assets/SimpleFX/_Demo/Demo.unity.meta
     - Assets/SimpleFX/_Demo/DemoSettings.lighting
     - Assets/SimpleFX/_Demo/DemoSettings.lighting.meta
+    - Assets/Sounds.meta
+    - Assets/Sounds/Background Music.meta
+    - Assets/Sounds/Background Music/Get_Ready_Select_Loading__30s_Loop.ogg
+    - Assets/Sounds/Background Music/Get_Ready_Select_Loading__30s_Loop.ogg.meta
+    - Assets/Sounds/Background Music/Spooky_Background_Music_1.ogg
+    - Assets/Sounds/Background Music/Spooky_Background_Music_1.ogg.meta
+    - Assets/Sounds/Menu Sounds.meta
+    - Assets/Sounds/Menu Sounds/ui_accept_2.wav
+    - Assets/Sounds/Menu Sounds/ui_accept_2.wav.meta
+    - Assets/Sounds/Menu Sounds/ui_error_1.wav
+    - Assets/Sounds/Menu Sounds/ui_error_1.wav.meta
+    - Assets/Sounds/Menu Sounds/ui_pause.wav
+    - Assets/Sounds/Menu Sounds/ui_pause.wav.meta
+    - Assets/Sounds/RoundWon.ogg
+    - Assets/Sounds/RoundWon.ogg.meta
+    - Assets/Sounds/SFX.meta
+    - Assets/Sounds/SFX/EnemySpawn.wav
+    - Assets/Sounds/SFX/EnemySpawn.wav.meta
+    - Assets/Sounds/SFX/PyoopyooShot.mp3
+    - Assets/Sounds/SFX/PyoopyooShot.mp3.meta
+    - Assets/Sounds/SFX/Sound 53.wav
+    - Assets/Sounds/SFX/Sound 53.wav.meta
+    - Assets/Sounds/SFX/die1.wav
+    - Assets/Sounds/SFX/die1.wav.meta
+    - Assets/Sounds/SFX/explosion1.wav
+    - Assets/Sounds/SFX/explosion1.wav.meta
+    - Assets/Sounds/SFX/pickup.wav
+    - Assets/Sounds/SFX/pickup.wav.meta
+    - Assets/Sounds/SFX/player shot.wav
+    - Assets/Sounds/SFX/player shot.wav.meta
+    - Assets/Sounds/SFX/shot1.wav
+    - Assets/Sounds/SFX/shot1.wav.meta
     - Assets/StreamingAssets.meta
-    - Assets/StreamingAssets/HiddenARCore.meta
     - Assets/TextMesh Pro.meta
     - Assets/TextMesh Pro/Documentation.meta
     - Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf
@@ -963,6 +1056,23 @@ MonoBehaviour:
     - Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
     - Assets/TextMesh Pro/Sprites/EmojiOne.png
     - Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+    - Assets/Textures.meta
+    - Assets/Textures/Effect_02_8x6-48.png
+    - Assets/Textures/Effect_02_8x6-48.png.meta
+    - Assets/Textures/Effect_03_8x4-32.png
+    - Assets/Textures/Effect_03_8x4-32.png.meta
+    - Assets/Textures/Effect_08_8x4-32.png
+    - Assets/Textures/Effect_08_8x4-32.png.meta
+    - Assets/Textures/heart pixel art 64x64.png
+    - Assets/Textures/heart pixel art 64x64.png.meta
+    - Assets/Textures/musicicoff.png
+    - Assets/Textures/musicicoff.png.meta
+    - Assets/Textures/musicicon.png
+    - Assets/Textures/musicicon.png.meta
+    - Assets/Textures/soundoff.png
+    - Assets/Textures/soundoff.png.meta
+    - Assets/Textures/soundon.png
+    - Assets/Textures/soundon.png.meta
     - Assets/XR.meta
     - Assets/XR/Loaders.meta
     - Assets/XR/Loaders/AR Core Loader.asset
@@ -995,7 +1105,7 @@ MonoBehaviour:
     - ProjectSettings/VFXManager.asset
     - ProjectSettings/VersionControlSettings.asset
     - 
-    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
