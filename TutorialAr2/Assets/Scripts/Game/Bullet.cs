@@ -1,23 +1,74 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Bullet : MonoBehaviour
+namespace ShootAR
 {
-    // Start is called before the first frame update
+	[RequireComponent(typeof(Rigidbody), typeof(SphereCollider))]
+	public class Bullet : Spawnable
+	{
+		public const float  MAX_TRAVEL_DISTANCE = 70f;
 
-    private GameObject player;
-    public float speed = 1.0f;
-    private Vector3 dir;
-    void Start()
-    {
-        player = GameObject.Find("Player");
-        dir = transform.position - player.transform.position;
-    }
+		/// <summary>
+		/// Total count of spawned bullets during the current round.
+		/// </summary>
+		public static int Count { private set; get; }
+		/// <summary>
+		/// Count of currently active bullets.
+		/// </summary>
+		public static int ActiveCount { get; private set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Translate(dir.normalized * Time.deltaTime * speed);
-    }
+		private static float? bulletPrefabSpeed = null;
+
+		public static Bullet Create(float speed) {
+			var o = new GameObject(nameof(Bullet)).AddComponent<Bullet>();
+
+			o.GetComponent<Rigidbody>().useGravity = false;
+			o.GetComponent<SphereCollider>().isTrigger = true;
+			o.Speed = speed;
+
+			o.gameObject.SetActive(false);
+			return o;
+		}
+
+		protected void Awake() {
+			if (bulletPrefabSpeed is null)
+				bulletPrefabSpeed = Resources.Load<Bullet>(Prefabs.BULLET).Speed;
+		}
+		protected void Start() {
+			transform.rotation =
+					Camera.main?.transform.rotation
+					?? new Quaternion(0, 0, 0, 0);
+		}
+
+		private void OnEnable() {
+			GetComponent<Rigidbody>().velocity = transform.forward * Speed;
+
+			Count++;
+			ActiveCount++;
+		}
+
+		private void OnDisable() {
+			ActiveCount--;
+		}
+
+		private void LateUpdate() {
+			if (transform.position.magnitude >= MAX_TRAVEL_DISTANCE) Destroy();
+		}
+
+		protected void OnTriggerEnter(Collider other) {
+			Spawnable o;
+			if ((o = other.GetComponent<Enemies.Enemy>()) != null
+			|| (o = other.GetComponent<Capsule>()) != null) {
+				o.Destroy();
+				Destroy();
+			}
+		}
+
+		public override void ResetState() {
+			Speed = (float)bulletPrefabSpeed;
+		}
+
+		public override void Destroy() {
+			ReturnToPool<Bullet>();
+		}
+	}
 }
