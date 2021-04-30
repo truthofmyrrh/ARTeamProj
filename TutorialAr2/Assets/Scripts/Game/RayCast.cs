@@ -13,13 +13,12 @@ public class RayCast : MonoBehaviour
     private RaycastHit2D hit;
     private Vector2[] touches = new Vector2[5];
     private Vector3 hitPose;
-    private PlayerInfo pinfo;
     public ParticleSystem particle;
     public LayerMask layermask;
 
     private void Start()
     {
-        pinfo = GameObject.Find("AR Session Origin").transform.GetChild(1).GetComponent<PlayerInfo>();
+        
     }
 
     public Vector3 getHitpos()
@@ -31,25 +30,21 @@ public class RayCast : MonoBehaviour
 
 
         Ray ray = Camera.main.ScreenPointToRay(Touchscreen.current.position.ReadValue());
-        RaycastHit hit;
+            RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, layermask))
-        {
+            if (Physics.Raycast(ray, out hit, layermask))
+            {
             //If player tap onto the enemy then it would be distroyed with particle.
 
 
             hitPose = hit.transform.position;
 
-            Destroy(hit.collider.gameObject);
-            Instantiate(particle, hit.transform);
-            particle.Play(true);
-
-            pinfo.ChangeCoin(pinfo.coin + 1);
-
+                Destroy(hit.collider.gameObject);
+                Debug.Log("destroyed");
 
                 
 
-        }
+            }
 
 
         

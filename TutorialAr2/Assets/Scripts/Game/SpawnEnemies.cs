@@ -6,7 +6,7 @@ public class SpawnEnemies : MonoBehaviour
 {
     public GameObject EnemyPrefabToInstantiate;
     public List<GameObject> EnemiesSpawned;
-    public float time = 3.0f;
+    public float time = 1.0f;
 
     public GameObject EnemySpawnPosition;
 
