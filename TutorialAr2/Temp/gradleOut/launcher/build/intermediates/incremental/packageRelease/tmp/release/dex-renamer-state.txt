@@ -1,0 +1,4 @@
+#Thu Apr 29 23:42:12 KST 2021
+base.0=C\:\\Users\\sieun\\UnityProjects\\TutorialAr2\\Temp\\gradleOut\\launcher\\build\\intermediates\\dex\\release\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

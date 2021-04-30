@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "ce071717e3ced0920b7e",
+    "m_SelectedDeviceId": "R54R3020X4L",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "R54R3020X4L",
+        "name": "com.DefaultCompany.projectTest",
+        "processId": 13898,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -114,6 +114,60 @@
             "deviceId": "R54N6004R8A",
             "name": "com.DefaultCompany.projectTest",
             "processId": 10678,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 23220,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 24054,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 29091,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 2575,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 17229,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 17817,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 11175,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 11411,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 13898,
             "exited": false
         }
     ],
