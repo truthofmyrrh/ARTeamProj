@@ -12,11 +12,12 @@ ScriptsOnlyBuild:
     - ShootAR.NameAsker
     - ShootAR.Player
     - ShootAR.ScoreManager
-    - ShootAR.UIManager
+    - monsterController
     Unity.CollabProxy.Editor.dll:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.EnhancedTouch.TouchSimulation
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
@@ -98,49 +99,49 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1512}
+      Script: {instanceID: 1514}
     - Class: 114
-      Script: {instanceID: 1656}
+      Script: {instanceID: 1658}
     - Class: 114
-      Script: {instanceID: 1904}
+      Script: {instanceID: 1908}
     - Class: 114
-      Script: {instanceID: 2268}
+      Script: {instanceID: 2274}
     - Class: 114
-      Script: {instanceID: 2278}
+      Script: {instanceID: 2284}
     - Class: 114
-      Script: {instanceID: 2688}
+      Script: {instanceID: 2694}
     - Class: 114
-      Script: {instanceID: 2846}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 2910}
     - Class: 114
-      Script: {instanceID: 3070}
+      Script: {instanceID: 3076}
     - Class: 114
-      Script: {instanceID: 3486}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 3712}
+      Script: {instanceID: 3724}
     - Class: 114
-      Script: {instanceID: 3862}
+      Script: {instanceID: 3876}
     - Class: 114
-      Script: {instanceID: 4308}
+      Script: {instanceID: 4326}
     - Class: 114
-      Script: {instanceID: 4328}
+      Script: {instanceID: 4346}
     - Class: 114
-      Script: {instanceID: 4344}
+      Script: {instanceID: 4362}
     - Class: 114
-      Script: {instanceID: 4784}
+      Script: {instanceID: 4808}
     - Class: 114
-      Script: {instanceID: 4824}
+      Script: {instanceID: 4848}
     - Class: 114
-      Script: {instanceID: 4954}
+      Script: {instanceID: 4982}
     - Class: 114
-      Script: {instanceID: 5288}
+      Script: {instanceID: 5320}
     - Class: 114
-      Script: {instanceID: 5318}
+      Script: {instanceID: 5350}
     - Class: 114
-      Script: {instanceID: 5818}
+      Script: {instanceID: 5850}
     - Class: 114
-      Script: {instanceID: 5826}
+      Script: {instanceID: 5858}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -187,47 +188,49 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1512}
+      Script: {instanceID: 1514}
     - Class: 114
-      Script: {instanceID: 2278}
+      Script: {instanceID: 2284}
     - Class: 114
-      Script: {instanceID: 2428}
+      Script: {instanceID: 2434}
     - Class: 114
-      Script: {instanceID: 2444}
+      Script: {instanceID: 2450}
     - Class: 114
-      Script: {instanceID: 2486}
+      Script: {instanceID: 2492}
     - Class: 114
-      Script: {instanceID: 2688}
+      Script: {instanceID: 2694}
     - Class: 114
-      Script: {instanceID: 2828}
+      Script: {instanceID: 2834}
     - Class: 114
-      Script: {instanceID: 2846}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 3070}
+      Script: {instanceID: 3076}
     - Class: 114
-      Script: {instanceID: 3130}
+      Script: {instanceID: 3138}
     - Class: 114
-      Script: {instanceID: 3178}
+      Script: {instanceID: 3186}
     - Class: 114
-      Script: {instanceID: 3424}
+      Script: {instanceID: 3432}
     - Class: 114
-      Script: {instanceID: 3486}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 3712}
+      Script: {instanceID: 3724}
     - Class: 114
-      Script: {instanceID: 3862}
+      Script: {instanceID: 3876}
     - Class: 114
-      Script: {instanceID: 4344}
+      Script: {instanceID: 4346}
     - Class: 114
-      Script: {instanceID: 4408}
+      Script: {instanceID: 4362}
     - Class: 114
-      Script: {instanceID: 4784}
+      Script: {instanceID: 4426}
     - Class: 114
-      Script: {instanceID: 4916}
+      Script: {instanceID: 4808}
     - Class: 114
-      Script: {instanceID: 5760}
+      Script: {instanceID: 4942}
     - Class: 114
-      Script: {instanceID: 5826}
+      Script: {instanceID: 5804}
+    - Class: 114
+      Script: {instanceID: 5858}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -773,6 +776,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Main.dll
+    namespaceName: 
+    className: GameUI
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -795,6 +804,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: fc18a449a3a4028b099eed5fef71b057
+    assemblyName: Main.dll
+    namespaceName: 
+    className: SpawnEnemies
   - hash:
       serializedVersion: 2
       Hash: 290afc8da8e459e0b8dc7444bfaf5e35
@@ -1037,6 +1052,12 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: 60a6e5b43b3dc14a5f1fb799aacac7c5
+    assemblyName: Main.dll
+    namespaceName: 
+    className: PlayerInfo
+  - hash:
+      serializedVersion: 2
       Hash: 0e1d9b8dabf3244421c1f30947e2bfc4
     assemblyName: Main.dll
     namespaceName: ShootAR.Menu
@@ -1097,10 +1118,10 @@ ScriptsOnlyBuild:
     className: ARCoreLoaderSettings
   - hash:
       serializedVersion: 2
-      Hash: ac7c20cb4a2a413a31b2b79490aa6fca
+      Hash: 1ae18367d714fd8ad6a6171e55cc7653
     assemblyName: Main.dll
-    namespaceName: ShootAR
-    className: UIManager
+    namespaceName: 
+    className: RayCast
   - hash:
       serializedVersion: 2
       Hash: f6633ace6e530c0000f2ac6da4269c52
@@ -1119,6 +1140,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c0552f5d435ebaf37c9baba04e6c8bc8
+    assemblyName: Main.dll
+    namespaceName: 
+    className: monsterController
   - hash:
       serializedVersion: 2
       Hash: 8b1fe5dfdcf943fb3b72506b9f19335f
@@ -1229,7 +1256,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: a69cb593c4fb697ce2987576fef60fe8
+      Hash: 424224338a2fa3d5a92a97aca0cca381
     assemblyName: Main.dll
     namespaceName: ShootAR
     className: GameManager
@@ -1527,8 +1554,26 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Main.dll
+    namespaceName: 
+    className: TestTouch
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Main.dll
+    namespaceName: 
+    className: InputManager
+  - hash:
+      serializedVersion: 2
+      Hash: ac7c20cb4a2a413a31b2b79490aa6fca
+    assemblyName: Main.dll
+    namespaceName: ShootAR
+    className: uiManager1
   platform: 13
   scenePathNames:
   - Assets/Scences/GamePlay/MainMenu.unity
   - Assets/Scences/GamePlay/Stage2.unity
-  playerPath: C:/Users/sieun/UnityProjects/TutorialAr2/APK/test.apk
+  playerPath: C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/TutorialAr2/app.apk

@@ -8,7 +8,6 @@ public class SpawnEnemies : MonoBehaviour
     public List<GameObject> EnemiesSpawned;
     public float time = 1.0f;
 
-    public GameObject EnemySpawnPosition;
 
     public float RanMinX = 0;
     public float RanMaxX = 1f;
@@ -28,11 +27,11 @@ public class SpawnEnemies : MonoBehaviour
     void Update()
     {
       time -= Time.deltaTime;
-
+        Debug.Log("Wating For Spawning");
         if (time <= 0)
         {
             time = SpawnInterval;
-
+            Debug.Log("Chicken is going now");
             EnemiesSpawned.Add(Instantiate(EnemyPrefabToInstantiate, new Vector3(Random.Range(-RanMaxX, RanMaxX),  Random.Range(-RanMaxY, RanMaxY),Random.Range(-RanMaxZ,RanMaxZ)),transform.rotation));
             //transform.position = new Vector3(0, 0, 0);
         }

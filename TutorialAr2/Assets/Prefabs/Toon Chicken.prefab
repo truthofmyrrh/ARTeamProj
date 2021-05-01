@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 95943282229431942}
   - component: {fileID: 85079959108172102}
   - component: {fileID: 5576413708060824342}
-  - component: {fileID: 1596185543151386336}
+  - component: {fileID: -5888170037610736976}
   m_Layer: 6
   m_Name: Toon Chicken
   m_TagString: Enemy
@@ -315,7 +315,7 @@ Transform:
   m_GameObject: {fileID: 1311290861401530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4677390999235134}
   - {fileID: 4667570188774346}
@@ -374,7 +374,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1596185543151386336
+--- !u!114 &-5888170037610736976
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -383,12 +383,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1311290861401530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f1d97ebd743aac49a066af145fe6cfc, type: 3}
+  m_Script: {fileID: 11500000, guid: 72b24a84cf5511249979028e631c766c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 3086387975881194262, guid: 156d2752548a7f240b7c05b07a793a59, type: 3}
-  origin: {fileID: 1311290861401530}
   movementSpeed: 0.1
+  uiManager: {fileID: 0}
 --- !u!1 &1325880688823160
 GameObject:
   m_ObjectHideFlags: 0

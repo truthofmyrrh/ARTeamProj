@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "R54R3020X4L",
+    "m_SelectedDeviceId": "R54N6004R8A",
     "m_SelectedPackage": {
-        "deviceId": "R54R3020X4L",
+        "deviceId": "R54N6004R8A",
         "name": "com.DefaultCompany.projectTest",
-        "processId": 13898,
+        "processId": 13482,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -52,68 +52,44 @@
         },
         {
             "deviceId": "R54N6004R8A",
-            "name": "com.xodo.pdf.reader",
-            "processId": 29463,
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 9149,
+            "exited": true
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 10214,
+            "exited": true
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 10665,
+            "exited": true
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 11108,
+            "exited": true
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 12216,
+            "exited": true
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 12953,
             "exited": false
         },
         {
             "deviceId": "R54N6004R8A",
             "name": "com.DefaultCompany.projectTest",
-            "processId": 32413,
-            "exited": false
-        },
-        {
-            "deviceId": "R54N6004R8A",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 24139,
-            "exited": false
-        },
-        {
-            "deviceId": "R54N6004R8A",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 21540,
-            "exited": false
-        },
-        {
-            "deviceId": "R54N6004R8A",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 24681,
-            "exited": false
-        },
-        {
-            "deviceId": "R54N6004R8A",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 30015,
-            "exited": false
-        },
-        {
-            "deviceId": "R54N6004R8A",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 31714,
-            "exited": false
-        },
-        {
-            "deviceId": "R54N6004R8A",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 1666,
-            "exited": false
-        },
-        {
-            "deviceId": "R54N6004R8A",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 5452,
-            "exited": false
-        },
-        {
-            "deviceId": "R54N6004R8A",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 8975,
-            "exited": false
-        },
-        {
-            "deviceId": "R54N6004R8A",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 10678,
+            "processId": 13482,
             "exited": false
         },
         {

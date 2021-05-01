@@ -28,23 +28,24 @@ public class RayCast : MonoBehaviour
     private void Update()
     {
 
+        
+        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        RaycastHit hit;
 
-        Ray ray = Camera.main.ScreenPointToRay(Touchscreen.current.position.ReadValue());
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, layermask))
-            {
-            //If player tap onto the enemy then it would be distroyed with particle.
+        if (Physics.Raycast(ray, out hit, layermask))
+        {
+        //If player tap onto the enemy then it would be distroyed with particle.
 
 
             hitPose = hit.transform.position;
-
-                Destroy(hit.collider.gameObject);
-                Debug.Log("destroyed");
+            particle.transform.Translate(hitPose);
+            particle.Play(true);
+            Destroy(hit.collider.gameObject);
+                
 
                 
 
-            }
+        }
 
 
         

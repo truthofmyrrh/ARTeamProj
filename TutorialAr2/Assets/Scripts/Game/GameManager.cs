@@ -23,7 +23,7 @@ namespace ShootAR
 		private AudioSource audioPlayer;
 		[SerializeField] private GameState gameState;
 		[SerializeField] private Button fireButton;
-		[SerializeField] private UIManager ui;
+		[SerializeField] private uiManager1 ui;
 		private WebCamTexture cam;
 		[SerializeField] private RawImage backgroundTexture;
 		[SerializeField] private Player player;
@@ -36,7 +36,7 @@ namespace ShootAR
 			ScoreManager scoreManager = null,
 			AudioClip victoryMusic = null, AudioSource sfx = null,
 			Button fireButton = null, RawImage background = null,
-			UIManager ui = null
+			uiManager1 ui = null
 		) {
 			var o = new GameObject(nameof(GameManager)).AddComponent<GameManager>();
 
@@ -51,7 +51,7 @@ namespace ShootAR
 				??
 				new GameObject("Background").AddComponent<RawImage>();
 			o.ui = ui ??
-				UIManager.Create(
+				uiManager1.Create(
 					uiCanvas: new GameObject("UI"),
 					pauseCanvas: new GameObject("PauseScreen"),
 					bulletCount: new GameObject("Ammo").AddComponent<Text>(),
