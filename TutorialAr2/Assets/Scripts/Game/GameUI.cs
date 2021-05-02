@@ -17,8 +17,9 @@ public class GameUI : MonoBehaviour
 	void Start()
     {
 		health = new List<GameObject>();
-		CalculateHealth();
+		
 		uiCanvas = GameObject.Find("UIManager").transform.GetChild(1).gameObject;
+		CalculateHealth();
 	}
 
     // Update is called once per frame
@@ -32,10 +33,11 @@ public class GameUI : MonoBehaviour
 		if(currenthealth == 0)
         {
 			SceneManager.LoadScene(FailedScene);
+			return;
         }
 		currenthealth--;
 		health[(int)currenthealth].SetActive(false);
-		health.RemoveAt((int)currenthealth);
+		//health.RemoveAt((int)currenthealth);
 	}
 
 	public void boosthealth()
@@ -51,14 +53,20 @@ public class GameUI : MonoBehaviour
 
 	public void CalculateHealth()
 	{
-		foreach (GameObject h in uiCanvas.transform.GetChild(5))
+		int i = 0;
+		GameObject h;
+		Debug.Log(uiCanvas.name);
+		while( uiCanvas.transform.GetChild(5).GetChild(i) == null)
 		{
+			h = uiCanvas.transform.GetChild(5).GetChild(i).gameObject;
 			health.Add(h);
 			maxhealth++;
 			if (h.activeInHierarchy)
 			{
 				currenthealth++;
 			}
+
+			i++;
 		}
 	}
 }

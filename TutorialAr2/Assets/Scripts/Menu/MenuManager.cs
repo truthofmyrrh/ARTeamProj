@@ -16,6 +16,7 @@ namespace ShootAR.Menu
 	{
 
 		private AudioSource sfx;
+		private bool isPlaying = true;
 
 		[SerializeField] private GameObject mainMenu;
 		[SerializeField] private GameObject subMenu;
@@ -24,6 +25,8 @@ namespace ShootAR.Menu
 		[SerializeField] private GameObject highscoreMenu;
 		[SerializeField] private AudioClip select;
 		[SerializeField] private AudioClip back;
+
+
 
 		public static Stack<string> scenes = new Stack<string>();
 
@@ -101,7 +104,9 @@ namespace ShootAR.Menu
 			subMenu.SetActive(false);
 			mainMenu.SetActive(true);
 
+			//sound
 			sfx.PlayOneShot(back, 1.5F);
+			isPlaying = true;
 		}
 
 		public void QuitApp() {
@@ -115,5 +120,20 @@ namespace ShootAR.Menu
 #endif
 		}
 
+
+		public void TurnSoundOnOff()
+		{
+			if(isPlaying)
+            {
+				sfx.Pause();
+
+            }
+            else
+            {
+				sfx.Play();
+            }
+			isPlaying = !isPlaying;
+			
+		}
 	}
 }

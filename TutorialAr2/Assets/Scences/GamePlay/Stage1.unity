@@ -2606,7 +2606,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602321939}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 378a8d7e7d1130f449b735b3bfeafea1, type: 3}
   m_Name: 
@@ -3314,6 +3314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1978182685}
   - component: {fileID: 1978182684}
+  - component: {fileID: 1978182686}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -3349,6 +3350,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1978182686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978182683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a338a5569c1f4b54fb703741aee000db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiCanvas: {fileID: 424394840}
+  pauseCanvas: {fileID: 1827682135}
+  bulletCount: {fileID: 1083635518}
+  bulletPlus: {fileID: 433721802}
+  messageOnScreen: {fileID: 1859746444}
+  score: {fileID: 705781307}
+  roundIndex: {fileID: 0}
+  gameState: {fileID: 0}
+  pauseSfx: {fileID: 0}
+  pauseToMenuButton: {fileID: 294111498}
+  nameAsker: {fileID: 1922375728}
 --- !u!1 &2041387553
 GameObject:
   m_ObjectHideFlags: 0

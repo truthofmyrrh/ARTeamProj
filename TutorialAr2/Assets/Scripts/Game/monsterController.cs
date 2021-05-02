@@ -28,7 +28,7 @@ public class monsterController : MonoBehaviour
         
         transform.Translate(forward.normalized * Time.deltaTime * movementSpeed);
 
-        Debug.Log(transform.position);
+        
 
     }
 
@@ -44,6 +44,7 @@ public class monsterController : MonoBehaviour
 
             // collision with player
 
+            Debug.Log("Destroyed");
             uiManager.SubstractHealth();
             Destroy(gameObject);
 
