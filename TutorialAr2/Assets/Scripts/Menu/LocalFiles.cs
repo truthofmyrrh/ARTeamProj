@@ -17,13 +17,13 @@ namespace ShootAR
 		/// only the basename must be given.
 		/// </param>
 		public static void CopyResourceToPersistentData(string resource, string targetFile) {
-			targetFile = Path.Combine(Application.persistentDataPath, targetFile);
+			/*targetFile = Path.Combine(Application.persistentDataPath, targetFile);
 
 			TextAsset requestedFile = Resources.Load<TextAsset>(resource);
 			if (requestedFile == null)
 				throw new UnityException($"File not found in Resources: {resource}");
 
-			File.WriteAllBytes(targetFile, requestedFile.bytes);
+			File.WriteAllBytes(targetFile, requestedFile.bytes);*/
 		}
 	}
 }

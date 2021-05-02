@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.56452316, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -263,6 +263,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e52a7694ccbfe49b1c6324936bd6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &33761335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 33761336}
+  - component: {fileID: 33761337}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &33761336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33761335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &33761337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33761335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a3a8c41d63506a4c980c123e6835912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyPrefabToInstantiate: {fileID: 1311290861401530, guid: 312b31977ed9b2d48a14849ebb8c7fb3, type: 3}
+  EnemiesSpawned: []
+  time: 1
+  EnemySpawnPosition: {fileID: 0}
+  RanMinX: 0
+  RanMaxX: 1
+  RanMaxY: 0.3
+  RanMinZ: 0
+  RanMaxZ: 1
 --- !u!1 &132950305
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 183630722}
   - component: {fileID: 183630721}
+  - component: {fileID: 183630723}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -473,6 +526,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &183630723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183630720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38adfbbb138e4414c9bdac351d35886b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &213580049
 GameObject:
   m_ObjectHideFlags: 0
