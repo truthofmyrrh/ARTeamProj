@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637555965916743192
-    m_Hash: 2688142716
+      ticks: 637556131466183727
+    m_Hash: 1808889291
   m_LockFileStatus:
     m_FilePath: C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/TutorialAr2/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637555968001965908
-    m_Hash: 357224747
+      ticks: 637556132074437260
+    m_Hash: 2959523892
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -194,7 +194,7 @@ m_PackageAssets:
         version: 1.1.1
       resolvedDependencies:
       - name: com.unity.test-framework
-        version: 1.1.22
+        version: 1.1.24
       - name: com.unity.ext.nunit
         version: 1.0.6
       - name: com.unity.modules.imgui
@@ -275,7 +275,7 @@ m_PackageAssets:
         version: 1.1.9
       resolvedDependencies:
       - name: com.unity.test-framework
-        version: 1.1.22
+        version: 1.1.24
       - name: com.unity.ext.nunit
         version: 1.0.6
       - name: com.unity.modules.imgui
@@ -692,12 +692,12 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/com.unity.probuilder.git
         revision: c0048d825082c4ae352d19ea8bb13d5f63cbcde7
         path: 
-    - packageId: com.unity.test-framework@1.1.22
+    - packageId: com.unity.test-framework@1.1.24
       testable: 0
       isDirectDependency: 1
-      version: 1.1.22
+      version: 1.1.24
       source: 1
-      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.test-framework@1.1.22
+      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.test-framework@1.1.24
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -741,7 +741,6 @@ m_PackageAssets:
         - 1.1.22
         - 1.1.24
         compatible:
-        - 1.1.22
         - 1.1.24
         verified: 1.1.24
       dependencies:
@@ -773,13 +772,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637469345300000000
+      datePublishedTicks: 637505702940000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.test-framework.git
-        revision: 56c667cbc326a1cbab8dfd7ebc693a1121d0abe1
+        revision: e6fe8892689398c0d9aba4587e0ba69edc3d82b8
         path: 
     - packageId: com.unity.textmeshpro@3.0.4
       testable: 0
@@ -940,12 +939,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
         revision: e2f8dffb26de9a130d5b2140d83891d9a7825330
         path: 
-    - packageId: com.unity.timeline@1.4.6
+    - packageId: com.unity.timeline@1.4.7
       testable: 0
       isDirectDependency: 1
-      version: 1.4.6
+      version: 1.4.7
       source: 1
-      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.timeline@1.4.6
+      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.timeline@1.4.7
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -1021,7 +1020,6 @@ m_PackageAssets:
         - 1.6.0-pre.3
         - 1.6.0-pre.4
         compatible:
-        - 1.4.6
         - 1.4.7
         - 1.5.0-pre.2
         - 1.5.0-preview.1
@@ -1074,20 +1072,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637463150940000000
+      datePublishedTicks: 637516874380000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-        revision: 2fe55e5d14362cc4fdcc886f56dbfe518298e4a5
+        revision: 66f96ddbbc76f565093e1e5e5d3d322d28acc7d7
         path: 
     - packageId: com.unity.ugui@1.0.0
       testable: 0
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui
       assetPath: Packages/com.unity.ugui
       name: com.unity.ugui
       displayName: Unity UI
@@ -1145,12 +1143,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.xr.arcore@4.0.12
+    - packageId: com.unity.xr.arcore@4.1.7
       testable: 0
       isDirectDependency: 1
-      version: 4.0.12
+      version: 4.1.7
       source: 1
-      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.xr.arcore@4.0.12
+      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.xr.arcore@4.1.7
       assetPath: Packages/com.unity.xr.arcore
       name: com.unity.xr.arcore
       displayName: ARCore XR Plugin
@@ -1163,7 +1161,7 @@ m_PackageAssets:
       description: 'Provides native Google ARCore integration for use with Unity''s
         multi-platform XR API.
 
-        =Supported Features=
+        Supports the following features:
 
         -Efficient
         Background Rendering
@@ -1175,7 +1173,9 @@ m_PackageAssets:
         -Anchors
 
         -Hit
-        Testing'
+        Testing
+
+        -Occlusion'
       status: 4
       errors: []
       versions:
@@ -1305,25 +1305,25 @@ m_PackageAssets:
         - 4.2.0-pre.3
         - 4.2.0-pre.4
         - 4.2.0-pre.5
-        verified: 4.0.12
+        verified: 4.1.7
       dependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.0.12
+        version: 4.1.7
       - name: com.unity.xr.management
         version: 4.0.1
       - name: com.unity.modules.androidjni
         version: 1.0.0
       resolvedDependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.0.12
+        version: 4.1.7
       - name: com.unity.subsystemregistration
-        version: 1.0.6
-      - name: com.unity.xr.management
-        version: 4.0.1
+        version: 1.1.0
       - name: com.unity.modules.subsystems
         version: 1.0.0
       - name: com.unity.modules.jsonserialize
         version: 1.0.0
+      - name: com.unity.xr.management
+        version: 4.0.1
       - name: com.unity.modules.vr
         version: 1.0.0
       - name: com.unity.modules.physics
@@ -1353,20 +1353,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637486670260000000
+      datePublishedTicks: 637535033640000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-        revision: d2250746d9e0645ddb4cf008d12f833bf31603e1
+        revision: b5352c36faf68b8ffc1bbddaa0f204f75d4ac5fb
         path: 
-    - packageId: com.unity.xr.arfoundation@4.0.12
+    - packageId: com.unity.xr.arfoundation@4.1.7
       testable: 0
       isDirectDependency: 1
-      version: 4.0.12
+      version: 4.1.7
       source: 1
-      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.xr.arfoundation@4.0.12
+      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.xr.arfoundation@4.1.7
       assetPath: Packages/com.unity.xr.arfoundation
       name: com.unity.xr.arfoundation
       displayName: AR Foundation
@@ -1524,23 +1524,23 @@ m_PackageAssets:
         - 4.2.0-pre.3
         - 4.2.0-pre.4
         - 4.2.0-pre.5
-        verified: 4.0.12
+        verified: 4.1.7
       dependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.0.12
+        version: 4.1.7
       - name: com.unity.xr.management
         version: 4.0.1
       resolvedDependencies:
       - name: com.unity.xr.arsubsystems
-        version: 4.0.12
+        version: 4.1.7
       - name: com.unity.subsystemregistration
-        version: 1.0.6
-      - name: com.unity.xr.management
-        version: 4.0.1
+        version: 1.1.0
       - name: com.unity.modules.subsystems
         version: 1.0.0
       - name: com.unity.modules.jsonserialize
         version: 1.0.0
+      - name: com.unity.xr.management
+        version: 4.0.1
       - name: com.unity.modules.vr
         version: 1.0.0
       - name: com.unity.modules.physics
@@ -1570,20 +1570,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637486671750000000
+      datePublishedTicks: 637535033760000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-        revision: d2250746d9e0645ddb4cf008d12f833bf31603e1
+        revision: b5352c36faf68b8ffc1bbddaa0f204f75d4ac5fb
         path: 
     - packageId: com.unity.modules.ai@1.0.0
       testable: 0
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai
       assetPath: Packages/com.unity.modules.ai
       name: com.unity.modules.ai
       displayName: AI
@@ -1631,7 +1631,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni
       assetPath: Packages/com.unity.modules.androidjni
       name: com.unity.modules.androidjni
       displayName: Android JNI
@@ -1679,7 +1679,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation
       assetPath: Packages/com.unity.modules.animation
       name: com.unity.modules.animation
       displayName: Animation
@@ -1727,7 +1727,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle
       assetPath: Packages/com.unity.modules.assetbundle
       name: com.unity.modules.assetbundle
       displayName: Asset Bundle
@@ -1775,7 +1775,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio
       assetPath: Packages/com.unity.modules.audio
       name: com.unity.modules.audio
       displayName: Audio
@@ -1823,7 +1823,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth
       assetPath: Packages/com.unity.modules.cloth
       name: com.unity.modules.cloth
       displayName: Cloth
@@ -1875,7 +1875,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director
       assetPath: Packages/com.unity.modules.director
       name: com.unity.modules.director
       displayName: Director
@@ -1931,7 +1931,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion
       assetPath: Packages/com.unity.modules.imageconversion
       name: com.unity.modules.imageconversion
       displayName: Image Conversion
@@ -1980,7 +1980,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui
       assetPath: Packages/com.unity.modules.imgui
       name: com.unity.modules.imgui
       displayName: IMGUI
@@ -2028,7 +2028,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize
       assetPath: Packages/com.unity.modules.jsonserialize
       name: com.unity.modules.jsonserialize
       displayName: JSONSerialize
@@ -2076,7 +2076,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem
       assetPath: Packages/com.unity.modules.particlesystem
       name: com.unity.modules.particlesystem
       displayName: Particle System
@@ -2124,7 +2124,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics
       assetPath: Packages/com.unity.modules.physics
       name: com.unity.modules.physics
       displayName: Physics
@@ -2172,7 +2172,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d
       assetPath: Packages/com.unity.modules.physics2d
       name: com.unity.modules.physics2d
       displayName: Physics 2D
@@ -2220,7 +2220,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture
       assetPath: Packages/com.unity.modules.screencapture
       name: com.unity.modules.screencapture
       displayName: Screen Capture
@@ -2272,7 +2272,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain
       assetPath: Packages/com.unity.modules.terrain
       name: com.unity.modules.terrain
       displayName: Terrain
@@ -2320,7 +2320,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics
       assetPath: Packages/com.unity.modules.terrainphysics
       name: com.unity.modules.terrainphysics
       displayName: Terrain Physics
@@ -2376,7 +2376,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap
       assetPath: Packages/com.unity.modules.tilemap
       name: com.unity.modules.tilemap
       displayName: Tilemap
@@ -2428,7 +2428,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui
       assetPath: Packages/com.unity.modules.ui
       name: com.unity.modules.ui
       displayName: UI
@@ -2476,7 +2476,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements
       assetPath: Packages/com.unity.modules.uielements
       name: com.unity.modules.uielements
       displayName: UIElements
@@ -2540,7 +2540,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra
       assetPath: Packages/com.unity.modules.umbra
       name: com.unity.modules.umbra
       displayName: Umbra
@@ -2588,7 +2588,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics
       assetPath: Packages/com.unity.modules.unityanalytics
       name: com.unity.modules.unityanalytics
       displayName: Unity Analytics
@@ -2644,7 +2644,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest
       assetPath: Packages/com.unity.modules.unitywebrequest
       name: com.unity.modules.unitywebrequest
       displayName: Unity Web Request
@@ -2692,7 +2692,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle
       assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
       name: com.unity.modules.unitywebrequestassetbundle
       displayName: Unity Web Request Asset Bundle
@@ -2748,7 +2748,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio
       assetPath: Packages/com.unity.modules.unitywebrequestaudio
       name: com.unity.modules.unitywebrequestaudio
       displayName: Unity Web Request Audio
@@ -2804,7 +2804,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture
       assetPath: Packages/com.unity.modules.unitywebrequesttexture
       name: com.unity.modules.unitywebrequesttexture
       displayName: Unity Web Request Texture
@@ -2860,7 +2860,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww
       assetPath: Packages/com.unity.modules.unitywebrequestwww
       name: com.unity.modules.unitywebrequestwww
       displayName: Unity Web Request WWW
@@ -2932,7 +2932,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles
       assetPath: Packages/com.unity.modules.vehicles
       name: com.unity.modules.vehicles
       displayName: Vehicles
@@ -2984,7 +2984,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video
       assetPath: Packages/com.unity.modules.video
       name: com.unity.modules.video
       displayName: Video
@@ -3044,7 +3044,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr
       assetPath: Packages/com.unity.modules.vr
       name: com.unity.modules.vr
       displayName: VR
@@ -3106,7 +3106,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind
       assetPath: Packages/com.unity.modules.wind
       name: com.unity.modules.wind
       displayName: Wind
@@ -3154,7 +3154,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr
       assetPath: Packages/com.unity.modules.xr
       name: com.unity.modules.xr
       displayName: XR
@@ -3214,7 +3214,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems
       assetPath: Packages/com.unity.modules.subsystems
       name: com.unity.modules.subsystems
       displayName: Subsystems
@@ -3266,7 +3266,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Program Files\2020.3.0f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielementsnative
+      resolvedPath: D:\Program Files\2020.3.6f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielementsnative
       assetPath: Packages/com.unity.modules.uielementsnative
       name: com.unity.modules.uielementsnative
       displayName: UIElements Native
@@ -3320,12 +3320,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.xr.arsubsystems@4.0.12
+    - packageId: com.unity.xr.arsubsystems@4.1.7
       testable: 0
       isDirectDependency: 0
-      version: 4.0.12
+      version: 4.1.7
       source: 1
-      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.xr.arsubsystems@4.0.12
+      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.xr.arsubsystems@4.1.7
       assetPath: Packages/com.unity.xr.arsubsystems
       name: com.unity.xr.arsubsystems
       displayName: AR Subsystems
@@ -3336,7 +3336,7 @@ m_PackageAssets:
       category: 
       type: 
       description: Contains definitions for AR Subsystems. This package is a dependency
-        of provider packages as well as AR Foundation
+        of provider packages, as well as AR Foundation.
       status: 4
       errors: []
       versions:
@@ -3397,36 +3397,22 @@ m_PackageAssets:
         - 4.2.0-pre.4
         - 4.2.0-pre.5
         compatible:
-        - 4.0.8
-        - 4.0.9
-        - 4.0.10
-        - 4.0.12
-        - 4.1.0-preview.1
-        - 4.1.0-preview.2
-        - 4.1.0-preview.3
-        - 4.1.0-preview.5
-        - 4.1.0-preview.6
-        - 4.1.0-preview.7
-        - 4.1.0-preview.9
-        - 4.1.0-preview.10
-        - 4.1.0-preview.11
-        - 4.1.0-preview.12
-        - 4.1.0-preview.13
-        - 4.1.1
-        - 4.1.3
-        - 4.1.5
         - 4.1.7
         - 4.2.0-pre.2
         - 4.2.0-pre.3
         - 4.2.0-pre.4
         - 4.2.0-pre.5
-        verified: 4.0.12
+        verified: 4.1.7
       dependencies:
       - name: com.unity.subsystemregistration
-        version: 1.0.6
+        version: 1.1.0
       resolvedDependencies:
       - name: com.unity.subsystemregistration
-        version: 1.0.6
+        version: 1.1.0
+      - name: com.unity.modules.subsystems
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
       keywords:
       - subsystem
       - XR
@@ -3443,13 +3429,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637486668120000000
+      datePublishedTicks: 637535033380000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-        revision: d2250746d9e0645ddb4cf008d12f833bf31603e1
+        revision: b5352c36faf68b8ffc1bbddaa0f204f75d4ac5fb
         path: 
     - packageId: com.unity.xr.management@4.0.1
       testable: 0
@@ -3550,7 +3536,7 @@ m_PackageAssets:
       - name: com.unity.xr.legacyinputhelpers
         version: 2.1.7
       - name: com.unity.subsystemregistration
-        version: 1.0.6
+        version: 1.1.0
       keywords:
       - xr
       - sdk
@@ -3790,12 +3776,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.legacyinputhelpers.git
         revision: b2024928b8140a10ad43aeb5824d2f08bb8796bc
         path: 
-    - packageId: com.unity.subsystemregistration@1.0.6
+    - packageId: com.unity.subsystemregistration@1.1.0
       testable: 0
       isDirectDependency: 0
-      version: 1.0.6
+      version: 1.1.0
       source: 1
-      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.subsystemregistration@1.0.6
+      resolvedPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\TutorialAr2\Library\PackageCache\com.unity.subsystemregistration@1.1.0
       assetPath: Packages/com.unity.subsystemregistration
       name: com.unity.subsystemregistration
       displayName: Subsystem Registration
@@ -3820,8 +3806,14 @@ m_PackageAssets:
         - 1.0.6
         - 1.1.0
         verified: 1.1.0
-      dependencies: []
-      resolvedDependencies: []
+      dependencies:
+      - name: com.unity.modules.subsystems
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.subsystems
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
       keywords:
       - subsystem
       - registration
@@ -3838,15 +3830,15 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637056434700000000
+      datePublishedTicks: 637314426150000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
-        url: git@github.cds.internal.unity3d.com:unity/com.unity.subsystemregistration.git
-        revision: 0b4157c6c0a160c51e74ead305aee77e6f29527d
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.subsystemregistration.git
+        revision: 72584ba5248fbe79e560e795ad819f876954fceb
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
 m_ProjectPath: C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/TutorialAr2/Packages
-m_EditorVersion: 2020.3.0f1 (c7b5465681fb)
+m_EditorVersion: 2020.3.6f1 (338bb68529b2)

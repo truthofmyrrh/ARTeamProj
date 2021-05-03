@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 public class GameUI : MonoBehaviour
 {
 	private float maxhealth = 0;
@@ -56,17 +57,32 @@ public class GameUI : MonoBehaviour
 		int i = 0;
 		GameObject h;
 		Debug.Log(uiCanvas.name);
-		while( uiCanvas.transform.GetChild(5).GetChild(i) == null)
-		{
-			h = uiCanvas.transform.GetChild(5).GetChild(i).gameObject;
-			health.Add(h);
-			maxhealth++;
-			if (h.activeInHierarchy)
-			{
-				currenthealth++;
-			}
 
-			i++;
-		}
+        try
+        {
+			while( uiCanvas.transform.GetChild(5).transform.GetChild(i) != null)
+			{
+				h = uiCanvas.transform.GetChild(5).GetChild(i).gameObject;
+				health.Add(h);
+				maxhealth++;
+				Debug.Log(h.activeInHierarchy);
+				if (h.activeInHierarchy)
+				{
+					currenthealth++;
+				}
+
+				i++;
+			}
+        }
+
+		catch(Exception ex)
+        {
+			Debug.Log("Max hp " + maxhealth);
+			Debug.Log("cur hp " +currenthealth);
+
+			return;
+        }
+		
+		
 	}
 }
