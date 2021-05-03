@@ -1,0 +1,11 @@
+
+=== Mon May  3 13:32:26 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.test-framework from version 1.1.22 to 1.1.24
+  com.unity.timeline from version 1.4.6 to 1.4.7
+  com.unity.xr.arcore from version 4.0.12 to 4.1.7
+  com.unity.xr.arfoundation from version 4.0.12 to 4.1.7
