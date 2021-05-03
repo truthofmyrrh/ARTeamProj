@@ -39,6 +39,7 @@ public class RayCast : MonoBehaviour
 
             hitPose = hit.transform.position;
             particle.transform.Translate(hitPose);
+            hit.transform.gameObject.GetComponent<ParticleSystem>().Play(true);
             particle.Play(true);
             Destroy(hit.collider.gameObject);
                 

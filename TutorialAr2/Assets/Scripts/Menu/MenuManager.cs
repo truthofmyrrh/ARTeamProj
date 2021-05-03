@@ -52,13 +52,13 @@ namespace ShootAR.Menu
 		public void previousScene()
 		{
 
-			if (scenes.Count == 1)
+			if (scenes.Count == 0)
 			{
 				Application.Quit();
 			}
 			else
 			{
-				scenes.Pop();
+				
 				string sceneToBuild = scenes.Pop();
 				loadScene(sceneToBuild);
 			}
@@ -79,9 +79,12 @@ namespace ShootAR.Menu
 			sfx.PlayOneShot(select, 1.2F);
 		}
 
+		/*
+		 * 
+		 *Warning! it's undesirable to access scene with its index since it can be differ to how the owner manage the scenes.
 		public void StartGame() {
 			SceneManager.LoadScene(1);
-		}
+		}*/
 
 		public void ToWaveEditor() {
 			mainMenu.SetActive(false);

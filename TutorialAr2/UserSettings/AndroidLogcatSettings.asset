@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "ce071717e3ced0920b7e",
         "name": "com.DefaultCompany.projectTest",
-        "processId": 5781,
+        "processId": 26375,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,67 +11,55 @@
         {
             "deviceId": "ce071717e3ced0920b7e",
             "name": "com.DefaultCompany.projectTest",
-            "processId": 19983,
+            "processId": 12764,
             "exited": true
         },
         {
             "deviceId": "ce071717e3ced0920b7e",
             "name": "com.DefaultCompany.projectTest",
-            "processId": 22034,
+            "processId": 13973,
             "exited": true
         },
         {
             "deviceId": "ce071717e3ced0920b7e",
             "name": "com.DefaultCompany.projectTest",
-            "processId": 23784,
+            "processId": 19714,
             "exited": true
         },
         {
             "deviceId": "ce071717e3ced0920b7e",
             "name": "com.DefaultCompany.projectTest",
-            "processId": 25384,
+            "processId": 20618,
             "exited": true
         },
         {
             "deviceId": "ce071717e3ced0920b7e",
             "name": "com.DefaultCompany.projectTest",
-            "processId": 32018,
+            "processId": 22134,
             "exited": true
         },
         {
             "deviceId": "ce071717e3ced0920b7e",
             "name": "com.sec.android.app.launcher",
-            "processId": 12207,
+            "processId": 5562,
+            "exited": false
+        },
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.kakao.talk",
+            "processId": 11329,
             "exited": false
         },
         {
             "deviceId": "ce071717e3ced0920b7e",
             "name": "com.DefaultCompany.projectTest",
-            "processId": 22993,
+            "processId": 23978,
             "exited": false
         },
         {
             "deviceId": "ce071717e3ced0920b7e",
             "name": "com.DefaultCompany.projectTest",
-            "processId": 30140,
-            "exited": false
-        },
-        {
-            "deviceId": "ce071717e3ced0920b7e",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 1886,
-            "exited": false
-        },
-        {
-            "deviceId": "ce071717e3ced0920b7e",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 2679,
-            "exited": false
-        },
-        {
-            "deviceId": "ce071717e3ced0920b7e",
-            "name": "com.DefaultCompany.projectTest",
-            "processId": 5781,
+            "processId": 26375,
             "exited": false
         },
         {
@@ -114,6 +102,12 @@
             "deviceId": "R54N6004R8A",
             "name": "com.DefaultCompany.projectTest",
             "processId": 13482,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 3527,
             "exited": false
         },
         {

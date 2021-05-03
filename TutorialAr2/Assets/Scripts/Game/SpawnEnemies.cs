@@ -16,7 +16,7 @@ public class SpawnEnemies : MonoBehaviour
     public float RanMinZ = 0;
     public float RanMaxZ = 1f;
 
-    public const float SpawnInterval = 0.3f;
+    public float SpawnInterval = 0.3f;
     // Start is called before the first frame update
 
     private void Start()
