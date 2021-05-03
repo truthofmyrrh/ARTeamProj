@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637553412440000000
-    m_Hash: 3574209010
+      ticks: 637555965916743192
+    m_Hash: 2688142716
   m_LockFileStatus:
     m_FilePath: C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/TutorialAr2/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637554741986300307
+      ticks: 637555968001965908
     m_Hash: 357224747
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -1019,6 +1019,7 @@ m_PackageAssets:
         - 1.5.4
         - 1.6.0-pre.1
         - 1.6.0-pre.3
+        - 1.6.0-pre.4
         compatible:
         - 1.4.6
         - 1.4.7
@@ -1035,6 +1036,7 @@ m_PackageAssets:
         - 1.5.4
         - 1.6.0-pre.1
         - 1.6.0-pre.3
+        - 1.6.0-pre.4
         verified: 1.4.7
       dependencies:
       - name: com.unity.modules.director
