@@ -14,9 +14,10 @@ namespace ShootAR.Menu
 	
 	public class MenuManager : MonoBehaviour
 	{
-
+		
 		private AudioSource sfx;
 		private bool isPlaying = true;
+		private SpawnEnemies spawnE;
 
 		[SerializeField] private GameObject mainMenu;
 		[SerializeField] private GameObject subMenu;
@@ -48,6 +49,7 @@ namespace ShootAR.Menu
 			AudioListener.volume = Configuration.Instance.SoundMuted ? 0f : Configuration.Instance.Volume;
 
 			sfx = gameObject.GetComponent<AudioSource>();
+			spawnE = GameObject.Find("EnemySpawnPosition").GetComponent<SpawnEnemies>();
 		}
 		public void previousScene()
 		{
@@ -58,7 +60,7 @@ namespace ShootAR.Menu
 			}
 			else
 			{
-				
+				spawnE.InitTime();
 				string sceneToBuild = scenes.Pop();
 				loadScene(sceneToBuild);
 			}
@@ -69,6 +71,7 @@ namespace ShootAR.Menu
 		{
 			scenes.Push(newScene);
 			SceneManager.LoadScene(newScene);
+
 		}
 
 		public void TostageMenu() {
@@ -79,12 +82,13 @@ namespace ShootAR.Menu
 			sfx.PlayOneShot(select, 1.2F);
 		}
 
-		/*
-		 * 
-		 *Warning! it's undesirable to access scene with its index since it can be differ to how the owner manage the scenes.
-		public void StartGame() {
-			SceneManager.LoadScene(1);
-		}*/
+		public void StartGame(string stage) {
+
+			//execute when game begins.
+			
+			SceneManager.LoadScene(stage);
+			//spawnE.InitTime();
+		}
 
 		public void ToWaveEditor() {
 			mainMenu.SetActive(false);

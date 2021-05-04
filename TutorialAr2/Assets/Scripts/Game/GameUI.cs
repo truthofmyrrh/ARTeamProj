@@ -15,7 +15,7 @@ public class GameUI : MonoBehaviour
 
 	private GameObject uiCanvas;
 	// Start is called before the first frame update
-	void Start()
+	public void Start()
     {
 		health = new List<GameObject>();
 		
@@ -56,7 +56,6 @@ public class GameUI : MonoBehaviour
 	{
 		int i = 0;
 		GameObject h;
-		Debug.Log(uiCanvas.name);
 
         try
         {

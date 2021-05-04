@@ -19,6 +19,10 @@ public class SpawnEnemies : MonoBehaviour
     public float SpawnInterval = 0.3f;
     // Start is called before the first frame update
 
+    public void InitTime()
+    {
+        time = Time.time;
+    }
     private void Start()
     {
         time = Time.time;

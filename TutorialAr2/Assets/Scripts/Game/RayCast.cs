@@ -28,8 +28,14 @@ public class RayCast : MonoBehaviour
     private void Update()
     {
 
-        
+#if UNITY_EDITOR
+        Debug.Log("Android");
+        Ray ray = Camera.main.ScreenPointToRay(Touchscreen.current.position.ReadValue());
+#endif
+#if UNITY_ANDROID
+        Debug.Log("Not Android");
         Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+#endif
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, layermask))
@@ -39,7 +45,7 @@ public class RayCast : MonoBehaviour
 
             hitPose = hit.transform.position;
             particle.transform.Translate(hitPose);
-            hit.transform.gameObject.GetComponent<ParticleSystem>().Play(true);
+            hit.transform.GetChild(5).GetComponent<ParticleSystem>().Play(true);
             particle.Play(true);
             Destroy(hit.collider.gameObject);
                 

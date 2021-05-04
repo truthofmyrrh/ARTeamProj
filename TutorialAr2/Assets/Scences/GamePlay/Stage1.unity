@@ -3515,13 +3515,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyPrefabToInstantiate: {fileID: 1311290861401530, guid: 312b31977ed9b2d48a14849ebb8c7fb3, type: 3}
   EnemiesSpawned: []
-  time: 3
+  time: 1
   RanMinX: 0
   RanMaxX: 1
   RanMaxY: 0.3
   RanMinZ: 0
   RanMaxZ: 1
-  SpawnInterval: 1
+  SpawnInterval: 0.3
 --- !u!4 &2104648141
 Transform:
   m_ObjectHideFlags: 0
