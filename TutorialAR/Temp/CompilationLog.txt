@@ -1,0 +1,4 @@
+# Starting compiling UnityEngine.TestRunner.dll
+D:\Program Files\2020.3.6f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-cb2377e542c2fe04c98c83e6ceb08983
+# Starting compiling UnityEngine.UI.dll
+D:\Program Files\2020.3.6f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-397795b86976cae47843a35fdc8d2b5f
