@@ -53,7 +53,7 @@ namespace ProjectTest.MainMenu
 
 			if (scenes.Count == 1)
 			{
-				SceneManager.LoadScene(0);
+				SceneManager.LoadScene("MainMenu");
 			}
 			else
 			{
@@ -80,11 +80,22 @@ namespace ProjectTest.MainMenu
 			sfx.PlayOneShot(select, 1.2F);
 		}
 
-		public void StartGame()
+		public void StartS1Game()
 		{
-			SceneManager.LoadScene(1);
+			SceneManager.LoadScene("Stage1");
 		}
-
+		public void StartS2Game()
+		{
+			SceneManager.LoadScene("Stage2");
+		}
+		public void StartS3Game()
+		{
+			SceneManager.LoadScene("Stage3");
+		}
+		public void StartS4Game()
+		{
+			SceneManager.LoadScene("Stage4");
+		}
 		public void ToStoreEditor()
 		{
 			mainMenu.SetActive(false);
@@ -111,13 +122,13 @@ namespace ProjectTest.MainMenu
 		}
 		public void ToGunsMenu()
 		{
-			SceneManager.LoadScene(4);
+			SceneManager.LoadScene("Gun");
 
 			sfx.PlayOneShot(back, 1.5F);
 		}
 		public void ToItemsMenu()
 		{
-			SceneManager.LoadScene(5);
+			SceneManager.LoadScene("Item");
 
 			sfx.PlayOneShot(back, 1.5F);
 		}

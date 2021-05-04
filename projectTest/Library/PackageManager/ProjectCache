@@ -1,6 +1,6 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/sieun/UnityProjects/Jaemin/Packages/manifest.json
+    m_FilePath: C:/Users/sieun/Documents/GitHub/ARTeamProj/projectTest/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -8,12 +8,12 @@ m_ProjectFiles:
       ticks: 637556456357128612
     m_Hash: 1808889291
   m_LockFileStatus:
-    m_FilePath: C:/Users/sieun/UnityProjects/Jaemin/Packages/packages-lock.json
+    m_FilePath: C:/Users/sieun/Documents/GitHub/ARTeamProj/projectTest/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637556467619624116
+      ticks: 637556813603480408
     m_Hash: 2959523892
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.9
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.collab-proxy@1.3.9
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -122,7 +122,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -227,7 +227,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -308,7 +308,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -377,7 +377,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.2
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.inputsystem@1.0.2
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.inputsystem@1.0.2
       assetPath: Packages/com.unity.inputsystem
       name: com.unity.inputsystem
       displayName: Input System
@@ -485,7 +485,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.1
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.mobile.android-logcat@1.2.1
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.mobile.android-logcat@1.2.1
       assetPath: Packages/com.unity.mobile.android-logcat
       name: com.unity.mobile.android-logcat
       displayName: Android Logcat
@@ -559,7 +559,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.5.0
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.probuilder@4.5.0
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.probuilder@4.5.0
       assetPath: Packages/com.unity.probuilder
       name: com.unity.probuilder
       displayName: ProBuilder
@@ -697,7 +697,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.24
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.test-framework@1.1.24
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.test-framework@1.1.24
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -786,7 +786,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.4
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.textmeshpro@3.0.4
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.textmeshpro@3.0.4
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -945,7 +945,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.7
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.timeline@1.4.7
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.timeline@1.4.7
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -1150,7 +1150,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.1.7
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.xr.arcore@4.1.7
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.xr.arcore@4.1.7
       assetPath: Packages/com.unity.xr.arcore
       name: com.unity.xr.arcore
       displayName: ARCore XR Plugin
@@ -1368,7 +1368,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.1.7
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.xr.arfoundation@4.1.7
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.xr.arfoundation@4.1.7
       assetPath: Packages/com.unity.xr.arfoundation
       name: com.unity.xr.arfoundation
       displayName: AR Foundation
@@ -3327,7 +3327,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.1.7
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.xr.arsubsystems@4.1.7
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.xr.arsubsystems@4.1.7
       assetPath: Packages/com.unity.xr.arsubsystems
       name: com.unity.xr.arsubsystems
       displayName: AR Subsystems
@@ -3462,7 +3462,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.0.1
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.xr.management@4.0.1
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.xr.management@4.0.1
       assetPath: Packages/com.unity.xr.management
       name: com.unity.xr.management
       displayName: XR Plugin Management
@@ -3590,7 +3590,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -3651,7 +3651,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.3
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.settings-manager@1.0.3
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.settings-manager@1.0.3
       assetPath: Packages/com.unity.settings-manager
       name: com.unity.settings-manager
       displayName: Settings Manager
@@ -3709,7 +3709,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 2.1.7
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7
       assetPath: Packages/com.unity.xr.legacyinputhelpers
       name: com.unity.xr.legacyinputhelpers
       displayName: XR Legacy Input Helpers
@@ -3801,7 +3801,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.1.0
       source: 1
-      resolvedPath: C:\Users\sieun\UnityProjects\Jaemin\Library\PackageCache\com.unity.subsystemregistration@1.1.0
+      resolvedPath: C:\Users\sieun\Documents\GitHub\ARTeamProj\projectTest\Library\PackageCache\com.unity.subsystemregistration@1.1.0
       assetPath: Packages/com.unity.subsystemregistration
       name: com.unity.subsystemregistration
       displayName: Subsystem Registration
@@ -3860,5 +3860,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: C:/Users/sieun/UnityProjects/Jaemin/Packages
+m_ProjectPath: C:/Users/sieun/Documents/GitHub/ARTeamProj/projectTest/Packages
 m_EditorVersion: 2020.3.1f1 (77a89f25062f)

@@ -6,40 +6,49 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scences/GamePlay/MainMenu.unity
+    path: Assets/Scenes/GamePlay/MainMenu.unity
     guid: 51ec04890bc86ca44a43fc83b9b9ddae
   - enabled: 1
-    path: Assets/Scences/GamePlay/Stage1.unity
+    path: Assets/Scenes/GamePlay/Stage1.unity
     guid: 1a8b572b9972c5743941cea85a528e78
   - enabled: 1
-    path: Assets/Scences/Result_suc.unity
+    path: Assets/Scenes/GamePlay/Stage2.unity
+    guid: 6515782c311ffe34280671312ca278ea
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/Stage3.unity
+    guid: 06c150b19b060944aa18794b4c49c2f9
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/Stage4.unity
+    guid: 6bf25c42b2062c74d9bccb543da41e67
+  - enabled: 1
+    path: Assets/Scenes/Result_suc.unity
     guid: 1bc0bb4336776484fa3a0f0a2569d24b
   - enabled: 1
-    path: Assets/Scences/Result_fail.unity
+    path: Assets/Scenes/Result_fail.unity
     guid: 47ae72d971eb7414dbffabc02bdab2c2
   - enabled: 1
-    path: Assets/Scences/Store/Gun.unity
+    path: Assets/Scenes/Store/Gun.unity
     guid: da8e157b3ec6ee04393440442ed56501
   - enabled: 1
-    path: Assets/Scences/Store/Item.unity
+    path: Assets/Scenes/Store/Item.unity
     guid: 3dc339c1c0399ff4681c6890ee28c10b
   - enabled: 1
-    path: Assets/Scences/Gun/GUN_M107.unity
+    path: Assets/Scenes/Gun/GUN_M107.unity
     guid: 7f435f7810cde44a6b9c43fc16982665
   - enabled: 1
-    path: Assets/Scences/Gun/GUN_UZI.unity
+    path: Assets/Scenes/Gun/GUN_UZI.unity
     guid: 11781e9a1f82d4dc4beae044edd37885
   - enabled: 1
-    path: Assets/Scences/Gun/GUN_M1911 1.unity
+    path: Assets/Scenes/Gun/GUN_M1911 1.unity
     guid: eaf2d0eff5b10430da2f7aa5dc3b9ef6
   - enabled: 1
-    path: Assets/Scences/Gun/GUN_M249.unity
+    path: Assets/Scenes/Gun/GUN_M249.unity
     guid: 27b8cea43d60347f7b29f1b085e05eb4
   - enabled: 1
-    path: Assets/Scences/Gun/GUN_AK47.unity
+    path: Assets/Scenes/Gun/GUN_AK47.unity
     guid: a7ac88d0ccf0545da81e49bf7595b470
   - enabled: 1
-    path: Assets/Scences/Gun/GUN_Bennelli_M4.unity
+    path: Assets/Scenes/Gun/GUN_Bennelli_M4.unity
     guid: 18e6c8fd0732b46fb9236a6cbbacfb2b
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 35e35ea3ffd262c42940ffe094e23132, type: 2}
