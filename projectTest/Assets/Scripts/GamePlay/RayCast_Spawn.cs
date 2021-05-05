@@ -45,9 +45,7 @@ public class RayCast_Spawn : MonoBehaviour
         }
 
         
-    }
-    private void FixedUpdate()
-    {
+    
         if (Input.touchCount > 0)
         {
             foreach (Touch t in Input.touches)
@@ -71,19 +69,19 @@ public class RayCast_Spawn : MonoBehaviour
                     if(hit.collider.gameObject.CompareTag("Enemy"))
                     {
                         PortionSpawned.Add(Instantiate(Clear_Portion, hit.transform.position,transform.rotation));
+                        hit.collider.gameObject.transform.GetChild(5).GetComponent<ParticleSystem>().Play(true);
                         Destroy(hit.collider.gameObject);
                         
                     }
                 }
                 if (Physics.Raycast(ray, out hit,portionmask))
                 {
-                    if(hit.collider.gameObject.CompareTag("Clear"))
-                    {
-                        Destroy(hit.collider.gameObject);
-                        for(int i=0;i<=count;i++){
-                            Destroy(EnemiesSpawned[i]);
-                        }
+                    
+                    Destroy(hit.collider.gameObject);
+                    for(int i=0;i<=count;i++){
+                        Destroy(EnemiesSpawned[i]);
                     }
+                    
                 }
                 
             }
@@ -91,29 +89,4 @@ public class RayCast_Spawn : MonoBehaviour
 
     }
 
-    /*
-    public void DestroyEnemy(Vector3 pos)
-    {
-
-        foreach (GameObject enemy in spawns.EnemiesSpawned)
-        {
-            float xGap = pos.x - enemy.transform.position.x;
-            float zGap = pos.z - enemy.transform.position.z;
-            float yGap = pos.y - enemy.transform.position.y;
-
-            bool includeY = Mathf.Abs(yGap) <= enemy.transform.localScale.y;
-            bool includeX = Mathf.Abs(xGap) <= enemy.transform.localScale.x;
-            bool includeZ = Mathf.Abs(zGap) <= enemy.transform.localScale.z;
-
-
-            Debug.Log("pos.x " + pos.x + " pos.z " + pos.z + "pos.y " + pos.y);
-            Debug.Log("inx " + includeX + "iny " + includeY + "includez " + includeZ);
-            if (includeY && includeZ)
-            {
-                spawns.EnemiesSpawned.Remove(enemy);
-                
-                break;
-            }
-        }
-    }*/
 }

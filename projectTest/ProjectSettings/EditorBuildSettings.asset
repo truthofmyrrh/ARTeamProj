@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/GamePlay/MainMenu.unity
     guid: 51ec04890bc86ca44a43fc83b9b9ddae
   - enabled: 1
+    path: Assets/Scenes/Result_suc.unity
+    guid: 1bc0bb4336776484fa3a0f0a2569d24b
+  - enabled: 1
+    path: Assets/Scenes/Result_fail.unity
+    guid: 47ae72d971eb7414dbffabc02bdab2c2
+  - enabled: 1
     path: Assets/Scenes/GamePlay/Stage1.unity
     guid: 1a8b572b9972c5743941cea85a528e78
   - enabled: 1
@@ -20,12 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GamePlay/Stage4.unity
     guid: 6bf25c42b2062c74d9bccb543da41e67
-  - enabled: 1
-    path: Assets/Scenes/Result_suc.unity
-    guid: 1bc0bb4336776484fa3a0f0a2569d24b
-  - enabled: 1
-    path: Assets/Scenes/Result_fail.unity
-    guid: 47ae72d971eb7414dbffabc02bdab2c2
   - enabled: 1
     path: Assets/Scenes/Store/Gun.unity
     guid: da8e157b3ec6ee04393440442ed56501
