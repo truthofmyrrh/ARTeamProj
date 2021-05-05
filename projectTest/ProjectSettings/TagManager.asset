@@ -5,16 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - GameManager
   - Clear
+  - Fast
+  - Slow
+  - Plus
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Enemy
-  - Portion
+  - Item
   - 
   - 
   - 
