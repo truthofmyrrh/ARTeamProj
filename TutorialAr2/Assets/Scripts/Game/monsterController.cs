@@ -17,7 +17,7 @@ public class monsterController : MonoBehaviour
     void Start()
     {
         uiManager = GameObject.Find("UIManager").GetComponent<GameUI>();
-        target = GameObject.Find("Player2").transform.GetChild(1).gameObject;
+        target = GameObject.Find("AR Session Origin").transform.GetChild(0).transform.GetChild(0).gameObject;
         
     }
  

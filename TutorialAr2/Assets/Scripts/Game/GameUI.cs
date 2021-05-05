@@ -56,7 +56,7 @@ public class GameUI : MonoBehaviour
 		int i = 0;
 		GameObject h;
 		Debug.Log(uiCanvas.name);
-		while( uiCanvas.transform.GetChild(5).GetChild(i) == null)
+		while( uiCanvas.transform.GetChild(5).GetChild(i) != null)
 		{
 			h = uiCanvas.transform.GetChild(5).GetChild(i).gameObject;
 			health.Add(h);
@@ -66,7 +66,21 @@ public class GameUI : MonoBehaviour
 				currenthealth++;
 			}
 
+			
+
 			i++;
 		}
 	}
+
+	public void InitHealth()
+    {
+		int i = 0;
+		while (uiCanvas.transform.GetChild(5).GetChild(i) != null)
+        {
+			health[i].SetActive(true);
+			i++;
+        }
+
+	}
+
 }

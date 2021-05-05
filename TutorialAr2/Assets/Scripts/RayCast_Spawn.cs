@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
-public class RayCast : MonoBehaviour
+public class RayCast_Spawn : MonoBehaviour
 {
    
     private RaycastHit2D hit;
@@ -45,9 +45,7 @@ public class RayCast : MonoBehaviour
         }
 
         
-    }
-    private void FixedUpdate()
-    {
+    
         if (Input.touchCount > 0)
         {
             foreach (Touch t in Input.touches)
@@ -71,19 +69,19 @@ public class RayCast : MonoBehaviour
                     if(hit.collider.gameObject.CompareTag("Enemy"))
                     {
                         PortionSpawned.Add(Instantiate(Clear_Portion, hit.transform.position,transform.rotation));
+                        hit.collider.gameObject.transform.GetChild(5).GetComponent<ParticleSystem>().Play(true);
                         Destroy(hit.collider.gameObject);
                         
                     }
                 }
                 if (Physics.Raycast(ray, out hit,portionmask))
                 {
-                    if(hit.collider.gameObject.CompareTag("Clear"))
-                    {
-                        Destroy(hit.collider.gameObject);
-                        for(int i=0;i<=count;i++){
-                            Destroy(EnemiesSpawned[i]);
-                        }
+                    
+                    Destroy(hit.collider.gameObject);
+                    for(int i=0;i<=count;i++){
+                        Destroy(EnemiesSpawned[i]);
                     }
+                    
                 }
                 
             }

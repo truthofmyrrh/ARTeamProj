@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637557758636664561
+      ticks: 637557774703782868
     m_Hash: 596785489
   m_LockFileStatus:
     m_FilePath: C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/TutorialAr2/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637557758636674400
+      ticks: 637557774703792884
     m_Hash: 162678652
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

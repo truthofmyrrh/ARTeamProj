@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R54N6004R8A",
         "name": "com.DefaultCompany.projectTest",
-        "processId": 20433,
+        "processId": 27888,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -96,6 +96,12 @@
             "deviceId": "R54N6004R8A",
             "name": "com.DefaultCompany.projectTest",
             "processId": 20433,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 27888,
             "exited": false
         },
         {
