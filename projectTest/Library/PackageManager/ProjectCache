@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637557955370000000
-    m_Hash: 1808889291
+      ticks: 637558040427190827
+    m_Hash: 596785489
   m_LockFileStatus:
     m_FilePath: C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/projectTest/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637557955370000000
-    m_Hash: 2959523892
+      ticks: 637558040427200826
+    m_Hash: 162678652
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
