@@ -63,9 +63,9 @@ public class GameUI : MonoBehaviour
 
         try
         {
-			while (uiCanvas.transform.GetChild(5).GetChild(i) != null)
+			while (uiCanvas.transform.GetChild(7).GetChild(i) != null)
 			{
-				h = uiCanvas.transform.GetChild(5).GetChild(i).gameObject;
+				h = uiCanvas.transform.GetChild(7).GetChild(i).gameObject;
 				health.Add(h);
 				health[i].SetActive(true);
 				maxhealth++;

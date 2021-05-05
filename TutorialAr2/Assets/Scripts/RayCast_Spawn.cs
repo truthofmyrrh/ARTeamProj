@@ -32,20 +32,20 @@ public class RayCast_Spawn : MonoBehaviour
     }
     void Update()
     {
-        
+
         time -= Time.deltaTime;
 
         if (time <= 0)
         {
             time = SpawnInterval;
 
-            EnemiesSpawned.Add(Instantiate(EnemyPrefabToInstantiate, new Vector3(Random.Range(-RanMaxX, RanMaxX),  Random.Range(-RanMaxY, RanMaxY),Random.Range(-RanMaxZ,RanMaxZ)),transform.rotation));
+            EnemiesSpawned.Add(Instantiate(EnemyPrefabToInstantiate, new Vector3(Random.Range(-RanMaxX, RanMaxX), Random.Range(-RanMaxY, RanMaxY), Random.Range(-RanMaxZ, RanMaxZ)), transform.rotation));
             transform.position = new Vector3(0, 0, 0);
             count++;
         }
 
-        
-    
+
+
         if (Input.touchCount > 0)
         {
             foreach (Touch t in Input.touches)
@@ -57,61 +57,38 @@ public class RayCast_Spawn : MonoBehaviour
 
                 }
             }
+        }
+    }
+    void checkTouch(Vector3 pos)
+    {   
+                
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
 
-            void checkTouch(Vector3 pos)
+        if (Physics.Raycast(ray, out hit, layermask))
+        {
+            if (hit.collider.gameObject.CompareTag("Enemy"))
             {
-                
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
+                PortionSpawned.Add(Instantiate(Clear_Portion, hit.transform.position, transform.rotation));
+                hit.collider.gameObject.transform.GetChild(5).GetComponent<ParticleSystem>().Play(true);
+                Destroy(hit.collider.gameObject);
 
-                if (Physics.Raycast(ray, out hit,layermask))
-                {
-                    if(hit.collider.gameObject.CompareTag("Enemy"))
-                    {
-                        PortionSpawned.Add(Instantiate(Clear_Portion, hit.transform.position,transform.rotation));
-                        hit.collider.gameObject.transform.GetChild(5).GetComponent<ParticleSystem>().Play(true);
-                        Destroy(hit.collider.gameObject);
-                        
-                    }
-                }
-                if (Physics.Raycast(ray, out hit,portionmask))
-                {
-                    
-                    Destroy(hit.collider.gameObject);
-                    for(int i=0;i<=count;i++){
-                        Destroy(EnemiesSpawned[i]);
-                    }
-                    
-                }
-                
             }
         }
+        else if (hit.collider.gameObject.CompareTag("Bomb"))
+        {
 
+            Destroy(hit.collider.gameObject);
+            for (int i = 0; i <= count; i++) {
+                Destroy(EnemiesSpawned[i]);
+                EnemiesSpawned.Clear();
+            }
+
+        }
+                
+            
     }
 
-    /*
-    public void DestroyEnemy(Vector3 pos)
-    {
-
-        foreach (GameObject enemy in spawns.EnemiesSpawned)
-        {
-            float xGap = pos.x - enemy.transform.position.x;
-            float zGap = pos.z - enemy.transform.position.z;
-            float yGap = pos.y - enemy.transform.position.y;
-
-            bool includeY = Mathf.Abs(yGap) <= enemy.transform.localScale.y;
-            bool includeX = Mathf.Abs(xGap) <= enemy.transform.localScale.x;
-            bool includeZ = Mathf.Abs(zGap) <= enemy.transform.localScale.z;
 
 
-            Debug.Log("pos.x " + pos.x + " pos.z " + pos.z + "pos.y " + pos.y);
-            Debug.Log("inx " + includeX + "iny " + includeY + "includez " + includeZ);
-            if (includeY && includeZ)
-            {
-                spawns.EnemiesSpawned.Remove(enemy);
-                
-                break;
-            }
-        }
-    }*/
 }
