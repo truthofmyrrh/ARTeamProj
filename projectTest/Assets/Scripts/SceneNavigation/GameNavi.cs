@@ -9,8 +9,11 @@ namespace ProjectTest
 	{
 		[SerializeField] private GameObject playCanvas;
 		[SerializeField] private GameObject pauseCanvas;
+<<<<<<< HEAD
 		[SerializeField] private Text bulletCount;
 		[SerializeField] private Text bulletPlus;
+=======
+>>>>>>> ProjectTest
 		[SerializeField] private Text score;
 		[SerializeField] private Text roundIndex;
 		[SerializeField] private GameState gameState;
@@ -19,6 +22,7 @@ namespace ProjectTest
 #pragma warning disable CS0649
 		[SerializeField] private Button pauseToMenuButton;
 #pragma warning restore CS0649
+<<<<<<< HEAD
 
 		public Text BulletCount
 		{
@@ -32,6 +36,8 @@ namespace ProjectTest
 			set { bulletPlus = value; }
 		}
 
+=======
+>>>>>>> ProjectTest
 		public Text Score
 		{
 			get { return score; }
@@ -56,8 +62,11 @@ namespace ProjectTest
 
 			o.playCanvas = playCanvas;
 			o.pauseCanvas = pauseCanvas;
+<<<<<<< HEAD
 			o.bulletCount = bulletCount;
 			o.bulletPlus = bulletPlus;
+=======
+>>>>>>> ProjectTest
 			o.Score = score;
 			o.RoundIndex = roundIndex;
 			o.sfx = sfx;

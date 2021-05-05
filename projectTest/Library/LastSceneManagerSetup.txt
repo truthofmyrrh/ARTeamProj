@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/GamePlay/Stage1.unity
+=======
+- path: Assets/Scenes/GamePlay/Stage3.unity
+>>>>>>> ProjectTest
   isLoaded: 1
   isActive: 1
   isSubScene: 0

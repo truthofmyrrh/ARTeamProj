@@ -7,6 +7,12 @@ TagManager:
   - Enemy
   - GameManager
   - Clear
+<<<<<<< HEAD
+=======
+  - Fast
+  - Slow
+  - Plus
+>>>>>>> ProjectTest
   layers:
   - Default
   - TransparentFX
@@ -15,7 +21,11 @@ TagManager:
   - Water
   - UI
   - Enemy
+<<<<<<< HEAD
   - Portion
+=======
+  - Item
+>>>>>>> ProjectTest
   - 
   - 
   - 

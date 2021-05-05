@@ -1,9 +1,17 @@
 {
+<<<<<<< HEAD
     "m_SelectedDeviceId": "R54N6004R8A",
     "m_SelectedPackage": {
         "deviceId": "R54N6004R8A",
         "name": "com.DefaultCompany.projectTest",
         "processId": 18674,
+=======
+    "m_SelectedDeviceId": "5200e144fe37253b",
+    "m_SelectedPackage": {
+        "deviceId": "5200e144fe37253b",
+        "name": "com.DefaultCompany.projectTest",
+        "processId": 31173,
+>>>>>>> ProjectTest
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -123,6 +131,7 @@
             "exited": false
         },
         {
+<<<<<<< HEAD
             "deviceId": "R54N6004R8A",
             "name": "com.DefaultCompany.projectTest",
             "processId": 15718,
@@ -177,6 +186,8 @@
             "exited": false
         },
         {
+=======
+>>>>>>> ProjectTest
             "deviceId": "R54R3020X4L",
             "name": "com.DefaultCompany.projectTest",
             "processId": 23220,
@@ -229,6 +240,15 @@
             "name": "com.DefaultCompany.projectTest",
             "processId": 13898,
             "exited": false
+<<<<<<< HEAD
+=======
+        },
+        {
+            "deviceId": "5200e144fe37253b",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 31173,
+            "exited": false
+>>>>>>> ProjectTest
         }
     ],
     "m_Tags": {

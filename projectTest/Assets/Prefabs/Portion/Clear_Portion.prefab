@@ -12,7 +12,10 @@ GameObject:
   - component: {fileID: 1785678618933855128}
   - component: {fileID: -3063599063641845855}
   - component: {fileID: 410798902418058336}
+<<<<<<< HEAD
   - component: {fileID: 72998544025944399}
+=======
+>>>>>>> ProjectTest
   m_Layer: 7
   m_Name: Clear_Portion
   m_TagString: Clear
@@ -112,6 +115,7 @@ CapsuleCollider:
   m_Height: 0.13488036
   m_Direction: 1
   m_Center: {x: 0, y: 0.050552905, z: 0.04131357}
+<<<<<<< HEAD
 --- !u!54 &72998544025944399
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128,3 +132,5 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+=======
+>>>>>>> ProjectTest
