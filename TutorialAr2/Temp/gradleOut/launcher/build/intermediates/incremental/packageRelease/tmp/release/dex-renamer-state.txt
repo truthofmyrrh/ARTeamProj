@@ -1,4 +1,0 @@
-#Wed May 05 13:55:14 KST 2021
-base.0=C\:\\Users\\Created\\Documents\\GitHub\\ArProject\\ARTeamProj\\TutorialAr2\\Temp\\gradleOut\\launcher\\build\\intermediates\\dex\\release\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
