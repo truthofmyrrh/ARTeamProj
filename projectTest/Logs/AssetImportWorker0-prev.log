@@ -1,0 +1,125 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19041.928; Version 2004; 64bit' Language: 'ko' Physical Memory: 8039 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Program Files\2020.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/projectTest
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60562
+Successfully changed project path to: C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/projectTest
+C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/projectTest
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 50.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.6f1 (338bb68529b2)
+[Subsystems] Discovering subsystems at path D:/Program Files/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/projectTest/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 (ID=0x1c20)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   26.21.14.3086
+Initialize mono
+Mono path[0] = 'D:/Program Files/2020.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Program Files/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Program Files/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001235 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 41.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.287 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001190 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 42.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.373 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.0 MB.
+System memory in use after: 102.1 MB.
+
+Unloading 84 unused Assets to reduce memory usage. Loaded Objects now: 2680.
+Total: 3.776400 ms (FindLiveObjects: 0.492000 ms CreateObjectMapping: 0.593700 ms MarkObjects: 2.463300 ms  DeleteObjects: 0.226400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/Bomb.obj
+  artifactKey: Guid(e5c4b1db114874a43a25618d8eb35639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bomb.obj using Guid(e5c4b1db114874a43a25618d8eb35639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2d6b2ff4f3970d55ca33176b4b087e') in 0.636768 seconds
+  Import took 0.640729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001082 seconds.
+  path: Assets/Prefabs/Capsule.prefab
+  artifactKey: Guid(445adfb5100791c4997b9004b26b8a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Capsule.prefab using Guid(445adfb5100791c4997b9004b26b8a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30a537d4af841b51093c869c10d2137') in 0.045319 seconds
+  Import took 0.048692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Prefabs/Bomb_thumb.png
+  artifactKey: Guid(8a74b90ec5046ef4c8fce78bcae41ff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bomb_thumb.png using Guid(8a74b90ec5046ef4c8fce78bcae41ff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bddddc30c91709cee7d8cb9f22d82a55') in 0.062742 seconds
+  Import took 0.066507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Prefabs/Toon Chicken.prefab
+  artifactKey: Guid(312b31977ed9b2d48a14849ebb8c7fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Toon Chicken.prefab using Guid(312b31977ed9b2d48a14849ebb8c7fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6688928efdfa9c193bae1f0067e9c9f') in 0.546096 seconds
+  Import took 0.550476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(156d2752548a7f240b7c05b07a793a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(156d2752548a7f240b7c05b07a793a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7ccaad873edeabf507f7a133319501b') in 0.014715 seconds
+  Import took 0.018292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Prefabs/SceneChanger.prefab
+  artifactKey: Guid(1b8f63f63909465489b4201db96d2ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SceneChanger.prefab using Guid(1b8f63f63909465489b4201db96d2ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5a2bfec1bd27cc337c4baa8a3affbbb') in 0.010912 seconds
+  Import took 0.014457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Prefabs/Bomb.prefab
+  artifactKey: Guid(a91a83f1e8e2a9b4ea55716ea7ab0c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bomb.prefab using Guid(a91a83f1e8e2a9b4ea55716ea7ab0c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '345f2330ef18cedf35557f3d4cd8c807') in 0.013054 seconds
+  Import took 0.017300 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

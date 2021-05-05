@@ -2,14 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System;
 public class GameUI : MonoBehaviour
 {
+	public GameObject textbox;
+	private Text score;
+
+	public float currentScore;
+	private float goalScore;
 	private float maxhealth = 0;
 	private float currenthealth = 0;
 	private float boostHealthValue = 1;
 	private List<GameObject> health;
 
 	private string FailedScene = "Result_fail";
+	private string WinScene = "Result_suc";
 
 
 	private GameObject uiCanvas;
@@ -20,7 +28,21 @@ public class GameUI : MonoBehaviour
 		
 		uiCanvas = GameObject.Find("PlayManager").transform.GetChild(1).gameObject;
 		CalculateHealth();
+
+		score = textbox.GetComponent<Text>();
 	}
+
+	public void incrementScore()
+    {
+		currentScore += 10;
+
+		if (currentScore == goalScore)
+        {
+			SceneManager.LoadScene(WinScene);
+        }
+
+		score.text = score.text + currentScore;
+    }
 
     // Update is called once per frame
     void Update()
@@ -56,20 +78,27 @@ public class GameUI : MonoBehaviour
 		int i = 0;
 		GameObject h;
 		Debug.Log(uiCanvas.name);
-		while( uiCanvas.transform.GetChild(5).GetChild(i) != null)
-		{
-			h = uiCanvas.transform.GetChild(5).GetChild(i).gameObject;
-			health.Add(h);
-			maxhealth++;
-			if (h.activeInHierarchy)
+
+        try
+        {
+			while (uiCanvas.transform.GetChild(5).GetChild(i) != null)
 			{
-				currenthealth++;
+				h = uiCanvas.transform.GetChild(5).GetChild(i).gameObject;
+				health.Add(h);
+				maxhealth++;
+				if (h.activeInHierarchy)
+				{
+					currenthealth++;
+				}
+				i++;
 			}
-
-			
-
-			i++;
 		}
+
+		catch(Exception ex)
+        {
+			return;
+        }
+		
 	}
 
 	public void InitHealth()

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 public class RayCast_Spawn : MonoBehaviour
 {
-   
+    private GameUI ui;
     private RaycastHit2D hit;
     private Vector2[] touches = new Vector2[5];
     public Camera camera;
@@ -28,6 +28,7 @@ public class RayCast_Spawn : MonoBehaviour
     public const float SpawnInterval = 1.0f;
     private void Start()
     {
+        ui = GameObject.Find("PlayManager").GetComponent<GameUI>();
         
     }
     void Update()
@@ -71,6 +72,8 @@ public class RayCast_Spawn : MonoBehaviour
                         PortionSpawned.Add(Instantiate(Clear_Portion, hit.transform.position,transform.rotation));
                         hit.collider.gameObject.transform.GetChild(5).GetComponent<ParticleSystem>().Play(true);
                         Destroy(hit.collider.gameObject);
+                        ui.incrementScore();
+                       
                         
                     }
                 }
