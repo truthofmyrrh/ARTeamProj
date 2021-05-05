@@ -10,7 +10,7 @@ public class GameUI : MonoBehaviour
 	private Text score;
 
 	public float currentScore;
-	private float goalScore;
+	public float goalScore;
 	private float maxhealth = 0;
 	private float currenthealth = 0;
 	private float boostHealthValue = 1;
@@ -41,7 +41,7 @@ public class GameUI : MonoBehaviour
 			SceneManager.LoadScene(WinScene);
         }
 
-		score.text = score.text + currentScore;
+		score.text = "# Coin " + currentScore;
     }
 
     // Update is called once per frame
@@ -81,9 +81,9 @@ public class GameUI : MonoBehaviour
 
         try
         {
-			while (uiCanvas.transform.GetChild(5).GetChild(i) != null)
+			while (uiCanvas.transform.GetChild(4).GetChild(i) != null)
 			{
-				h = uiCanvas.transform.GetChild(5).GetChild(i).gameObject;
+				h = uiCanvas.transform.GetChild(4).GetChild(i).gameObject;
 				health.Add(h);
 				maxhealth++;
 				if (h.activeInHierarchy)

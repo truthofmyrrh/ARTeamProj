@@ -18,6 +18,8 @@ public class SpawnEnemies : MonoBehaviour
     public float RanMaxZ = 1f;
 
     public const float SpawnInterval = 0.3f;
+
+    private monsterController mon;
     // Start is called before the first frame update
 
     private void Start()
@@ -32,8 +34,9 @@ public class SpawnEnemies : MonoBehaviour
         if (time <= 0)
         {
             time = SpawnInterval;
-
-            EnemiesSpawned.Add(Instantiate(EnemyPrefabToInstantiate, new Vector3(Random.Range(-RanMaxX, RanMaxX),  Random.Range(-RanMaxY, RanMaxY),Random.Range(-RanMaxZ,RanMaxZ)),transform.rotation));
+            GameObject chicken = Instantiate(EnemyPrefabToInstantiate, new Vector3(Random.Range(-RanMaxX, RanMaxX), Random.Range(-RanMaxY, RanMaxY), Random.Range(-RanMaxZ, RanMaxZ)), transform.rotation);
+            EnemiesSpawned.Add(chicken);
+            
             //transform.position = new Vector3(0, 0, 0);
         }
 

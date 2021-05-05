@@ -10,7 +10,7 @@ public class monsterController : MonoBehaviour
     
     public float movementSpeed = 0.3f;
         
-    private GameObject target;
+    public GameObject target;
     private GameUI uiManager;
     
 
@@ -27,13 +27,19 @@ public class monsterController : MonoBehaviour
         Vector3 forward = target.transform.position - transform.position;
         
         transform.Translate(forward.normalized * Time.deltaTime * movementSpeed);
+        Vector3 lookVector = target.transform.position - transform.position;
+        lookVector.y = transform.position.y;
+        Quaternion rot = Quaternion.LookRotation(lookVector);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rot, 1);
 
-        
+        //https://answers.unity.com/questions/1409312/how-do-i-make-my-enemy-look-at-player-on-only-one.html
+
+
 
     }
 
-    
-    
+
+
 
     private void OnTriggerEnter(Collider other)
     {

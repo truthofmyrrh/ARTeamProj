@@ -676,7 +676,7 @@ RectTransform:
   - {fileID: 2041387554}
   - {fileID: 253657226}
   m_Father: {fileID: 424394841}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -740,8 +740,8 @@ RectTransform:
   - {fileID: 489264674}
   - {fileID: 1083635516}
   - {fileID: 294111495}
-  - {fileID: 402977528}
   - {fileID: 705781305}
+  - {fileID: 402977528}
   m_Father: {fileID: 1978182685}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1341,7 +1341,7 @@ RectTransform:
   m_Children:
   - {fileID: 2139341588}
   m_Father: {fileID: 424394841}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2860,6 +2860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textbox: {fileID: 705781304}
   currentScore: 0
+  goalScore: 50
 --- !u!1 &2041387553
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "R54R3020X4L",
+    "m_SelectedDeviceId": "R54N6004R8A",
     "m_SelectedPackage": {
-        "deviceId": "ce071717e3ced0920b7e",
+        "deviceId": "R54N6004R8A",
         "name": "com.DefaultCompany.projectTest",
-        "processId": 29579,
+        "processId": 18674,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -120,6 +120,60 @@
             "deviceId": "R54N6004R8A",
             "name": "com.DefaultCompany.projectTest",
             "processId": 3527,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 15718,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 29280,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 30244,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 30811,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 32329,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 1080,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 9890,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 14504,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 18674,
             "exited": false
         },
         {

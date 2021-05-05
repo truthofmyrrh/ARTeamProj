@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1904
     height: 981
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 0
     width: 1095
     height: 552
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -343,22 +343,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/GamePlay
+    - Assets/Scenes/GamePlay
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/GamePlay
+  - Assets/Scenes/GamePlay
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Created\Documents\GitHub\ArProject\ARTeamProj\projectTest
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 644b0000
-    m_LastClickedID: 19300
-    m_ExpandedIDs: 000000001446000016460000184600001a4600001c4600003046000000ca9a3b
+    m_SelectedIDs: 92760000
+    m_LastClickedID: 30354
+    m_ExpandedIDs: 00000000284600002a4600002c4600002e4600003046000040460000424600004446000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -386,7 +386,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001446000016460000184600001a4600001c460000
+    m_ExpandedIDs: 00000000284600002a4600002c4600002e46000030460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -474,7 +474,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 321
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -507,20 +507,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: bc100000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4afbffff204400003e4400005a4400008e44000012450000
+      m_ExpandedIDs: 3ea0ffff5ca0ffffe6a1ffff18a2ffff52a2ffff94a2ffffd6a2ffff08a3ffff1ea3ffff00a4ffff0ea4ffff1ca4ffff2ca4ffff30a4ffff3ca4ffff4aa4ffff58a4ffffdea4ffff58a5fffffca5fffff4a6ffff18a8ffff2ca9ffff2ea9ffffd0a9ffffeca9ffff0caaffff30aaffff5caaffff80aaffff9caaffffc0aaffffdcaaffffcaabffffe8abffff70adffffa2adffffdcadffff1eaeffff60aeffff92aeffffa8aeffff8aafffff8eafffff92afffffa4afffffa8afffffb4afffffc2afffffd0afffffeeb0ffff0cb1ffffa8b2ffffeeb2ffff3cb3ffff92b3ffffe8b3ffff2eb4ffff58b4ffff4eb5ffff66b5ffff7eb5ffffa4b5ffffbcb5ffffdcb5fffffeb5ffff20b6ffff84baffffa2baffff28bcffff5abcffff94bcffffd6bcffff18bdffff4abdffff60bdffff42beffff46beffff4abeffff5cbeffff60beffff6cbeffff7abeffff88beffff54bffffffec0ffff1cc1ffffa4c2ffffd6c2ffff10c3ffff52c3ffff94c3ffffc6c3ffffdcc3ffffbec4ffffc2c4ffffc6c4ffffd8c4ffff02c5ffff08c5ffff14c5ffff26c5ffff22c6ffff40c6ffffdcc7ffff22c8ffff70c8ffffc6c8ffff1cc9ffff62c9ffff8cc9ffff82caffff9acaffffb2caffffd8caffff16cbffff30cbffff50cbffff76cbffff6cceffff8aceffff12d0ffff44d0ffff7ed0ffffc0d0ffff02d1ffff34d1ffff4ad1ffff2cd2ffff30d2ffff34d2ffff46d2ffff70d2ffff76d2ffff82d2ffff94d2ffff28dcffff44dcffff6cdcffff9edcffffd8dcffff1addffff5cddffff8eddffffa4ddffff86deffff8adeffff8edeffff9cdeffffaadeffffb0deffffbcdeffffc2deffff36e2ffffc2e2ffffdee2ffff66e4ffff98e4ffffd2e4ffff14e5ffff56e5ffff88e5ffff9ee5ffff80e6ffff84e6ffff88e6ffff9ae6ffff9ee6fffface6ffffbae6ffffc8e6ffff4ee9ffff6ce9fffff4eaffff26ebffff60ebffffa2ebffffe4ebffff16ecffff2cecffff0eedffff12edffff16edffff28edffff2cedffff3aedffff48edffff56edffff4afbffff544400005a4400001645000026660000446600006066000026670000f2770000d8ef0000f4ef0000cef0000012f2000030f200003af4000058f400002cf50000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Player
-        m_OriginalName: Player
+        m_Name: GameState
+        m_OriginalName: GameState
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -7702
+        m_UserData: 17566
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -620,11 +620,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.5273065, y: 0.07700307, z: -0.048065465, w: 0.84481704}
     speed: 2
-    m_Value: {x: 0.5259642, y: 0.07834311, z: -0.04873872, w: 0.84548724}
+    m_Value: {x: 0.5273045, y: 0.07700278, z: -0.048065282, w: 0.8448138}
   m_Size:
-    m_Target: 0.8093545
+    m_Target: 1.1093545
     speed: 2
-    m_Value: 0.5093545
+    m_Value: 0.8093545
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -707,7 +707,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1

@@ -7,6 +7,7 @@ public class RayCast_Spawn : MonoBehaviour
     private GameUI ui;
     private RaycastHit2D hit;
     private Vector2[] touches = new Vector2[5];
+    private float waittime = 1.0f;
     public Camera camera;
     public LayerMask layermask;
     public LayerMask portionmask;
@@ -69,20 +70,29 @@ public class RayCast_Spawn : MonoBehaviour
                 {
                     if(hit.collider.gameObject.CompareTag("Enemy"))
                     {
-                        PortionSpawned.Add(Instantiate(Clear_Portion, hit.transform.position,transform.rotation));
-                        hit.collider.gameObject.transform.GetChild(5).GetComponent<ParticleSystem>().Play(true);
-                        Destroy(hit.collider.gameObject);
                         ui.incrementScore();
+                        Transform t = hit.transform;
+                        Destroy(hit.collider.gameObject);
+                        GameObject portion = Instantiate(Clear_Portion, t.position, t.rotation);
+
+
+                        StartCoroutine(WaitTime());
+                        PortionSpawned.Add(portion);
+                        portion.GetComponent<Rigidbody>().AddForce(Vector3.up, ForceMode.Impulse);
+                        
                        
                         
                     }
                 }
-                if (Physics.Raycast(ray, out hit,portionmask))
+                else if (Physics.Raycast(ray, out hit,portionmask))
                 {
-                    
-                    Destroy(hit.collider.gameObject);
-                    for(int i=0;i<=count;i++){
+                    if(hit.collider.gameObject.CompareTag("Clear"))
+                    {
+                        Destroy(hit.collider.gameObject);
+                        for(int i=0;i<=count;i++){
                         Destroy(EnemiesSpawned[i]);
+                        }
+                    
                     }
                     
                 }
@@ -90,6 +100,12 @@ public class RayCast_Spawn : MonoBehaviour
             }
         }
 
+    }
+
+    IEnumerator WaitTime()
+    { 
+            yield return new WaitForSeconds(waittime);
+        
     }
 
 }
