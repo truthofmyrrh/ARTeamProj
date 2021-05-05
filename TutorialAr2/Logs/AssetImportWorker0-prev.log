@@ -15,11 +15,11 @@ C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/TutorialAr2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54350
+56008
 Successfully changed project path to: C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/TutorialAr2
 C:/Users/Created/Documents/GitHub/ArProject/ARTeamProj/TutorialAr2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 56.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 51.85 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.6f1 (338bb68529b2)
 [Subsystems] Discovering subsystems at path D:/Program Files/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -35,16 +35,54 @@ Initialize mono
 Mono path[0] = 'D:/Program Files/2020.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Program Files/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Program Files/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.077428 seconds.
+Registered in 0.030816 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 41.21 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 42.77 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in 21.610 seconds
+- Completed reload, in 15.513 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001431 seconds.
+Registered in 0.002413 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 42.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.483 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2285 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.2 MB.
+System memory in use after: 104.4 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 2726.
+Total: 2.956000 ms (FindLiveObjects: 0.295300 ms CreateObjectMapping: 0.148000 ms MarkObjects: 2.352300 ms  DeleteObjects: 0.159000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scences/GamePlay/MainMenu.unity
+  artifactKey: Guid(51ec04890bc86ca44a43fc83b9b9ddae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scences/GamePlay/MainMenu.unity using Guid(51ec04890bc86ca44a43fc83b9b9ddae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb2a93e7dd728cd168c96f7b18592576') in 0.047302 seconds
+  Import took 0.051108 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 55.4 MB.
+System memory in use after: 55.6 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 2726.
+Total: 3.250700 ms (FindLiveObjects: 0.760100 ms CreateObjectMapping: 0.155300 ms MarkObjects: 2.317500 ms  DeleteObjects: 0.016000 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

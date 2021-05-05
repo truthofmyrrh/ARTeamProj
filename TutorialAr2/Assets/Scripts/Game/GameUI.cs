@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 public class GameUI : MonoBehaviour
 {
 	private float maxhealth = 0;
@@ -19,7 +20,10 @@ public class GameUI : MonoBehaviour
 		health = new List<GameObject>();
 		
 		uiCanvas = GameObject.Find("UIManager").transform.GetChild(1).gameObject;
+
+		
 		CalculateHealth();
+	
 	}
 
     // Update is called once per frame
@@ -56,31 +60,33 @@ public class GameUI : MonoBehaviour
 		int i = 0;
 		GameObject h;
 		Debug.Log(uiCanvas.name);
-		while( uiCanvas.transform.GetChild(5).GetChild(i) != null)
-		{
-			h = uiCanvas.transform.GetChild(5).GetChild(i).gameObject;
-			health.Add(h);
-			maxhealth++;
-			if (h.activeInHierarchy)
-			{
-				currenthealth++;
-			}
 
-			
-
-			i++;
-		}
-	}
-
-	public void InitHealth()
-    {
-		int i = 0;
-		while (uiCanvas.transform.GetChild(5).GetChild(i) != null)
+        try
         {
-			health[i].SetActive(true);
-			i++;
-        }
+			while (uiCanvas.transform.GetChild(5).GetChild(i) != null)
+			{
+				h = uiCanvas.transform.GetChild(5).GetChild(i).gameObject;
+				health.Add(h);
+				health[i].SetActive(true);
+				maxhealth++;
+				if (h.activeInHierarchy)
+				{
+					currenthealth++;
+				}
 
+
+
+				i++;
+			}
+		}
+
+		catch(Exception ex)
+        {
+			return;
+        }
+		
 	}
+
+	
 
 }

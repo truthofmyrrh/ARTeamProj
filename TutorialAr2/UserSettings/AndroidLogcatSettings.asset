@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R54N6004R8A",
         "name": "com.DefaultCompany.projectTest",
-        "processId": 3972,
+        "processId": 18675,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -114,6 +114,18 @@
             "deviceId": "R54N6004R8A",
             "name": "com.DefaultCompany.projectTest",
             "processId": 3972,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 17327,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 18675,
             "exited": false
         },
         {
