@@ -4,39 +4,18 @@ Android-based AR shooting game
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This project is a small project developed by three Ajou University students as a 'immersive media programming' class project.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+To buid this project, PC and Android devices are needed.
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
+## Promotional Video
+<img width="{100%}" src="https://user-images.githubusercontent.com/62582611/117240323-86216000-ae6b-11eb-9a6c-ba20287a2e05.gif"/>
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Do not distribute without permission
 
 ## Built With
 
@@ -47,13 +26,8 @@ Add additional notes about how to deploy this on a live system
 
 ## Versioning
 
-
-## License
-
+Unity - 2020.3
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+* Store not yet implemented (collect items ans coins/ buy guns)
