@@ -19,9 +19,9 @@ Do not distribute without permission
 
 ## Built With
 
-* [Sieun Yu](https://github.com/truthofmyrrh) - 
-* [Taeseok Kim](https://github.com/sukyuree) - 
-* [Jaemin Cha](https://github.com/Sonak0930) - 
+* [Sieun Yu](https://github.com/truthofmyrrh) - Making ppt and promotional videos, Writing documents, Scripting
+* [Taeseok Kim](https://github.com/sukyuree) - Giving a presentation, Scripting
+* [Jaemin Cha](https://github.com/Sonak0930) - Data Organization, Scripting
 
 
 ## Versioning
