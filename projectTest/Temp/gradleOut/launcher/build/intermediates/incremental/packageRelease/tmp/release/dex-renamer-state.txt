@@ -1,0 +1,4 @@
+#Thu May 06 00:31:32 KST 2021
+base.0=/Users/kimtaeseok/Downloads/ARTeamProj-Semi/projectTest/Temp/gradleOut/launcher/build/intermediates/dex/release/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

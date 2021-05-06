@@ -1,0 +1,5 @@
+References and Sites
+https://coderzero.tistory.com/entry/%EC%9C%A0%EB%8B%88%ED%8B%B0-C-%EA%B0%95%EC%A2%8C-12-%EB%84%A4%EC%9E%84%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4Namespaces-using
+https://stackoverflow.com/a/53542474/12451939
+https://docs.unity3d.com/kr/530/Manual/script-Serialization.html
+http://theeye.pe.kr/archives/2740

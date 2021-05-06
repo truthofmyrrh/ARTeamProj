@@ -1,0 +1,245 @@
+{
+    "m_SelectedDeviceId": "5200e144fe37253b",
+    "m_SelectedPackage": {
+        "deviceId": "5200e144fe37253b",
+        "name": "com.DefaultCompany.projectTest",
+        "processId": 8196,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 12764,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 13973,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 19714,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 20618,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 22134,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.sec.android.app.launcher",
+            "processId": 5562,
+            "exited": false
+        },
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.kakao.talk",
+            "processId": 11329,
+            "exited": false
+        },
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 23978,
+            "exited": false
+        },
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 26375,
+            "exited": false
+        },
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 27810,
+            "exited": false
+        },
+        {
+            "deviceId": "ce071717e3ced0920b7e",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 29579,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 9149,
+            "exited": true
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 10214,
+            "exited": true
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 10665,
+            "exited": true
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 11108,
+            "exited": true
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 12216,
+            "exited": true
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 12953,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 13482,
+            "exited": false
+        },
+        {
+            "deviceId": "R54N6004R8A",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 3527,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 23220,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 24054,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 29091,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 2575,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 17229,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 17817,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 11175,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 11411,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X4L",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 13898,
+            "exited": false
+        },
+        {
+            "deviceId": "5200e144fe37253b",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 31173,
+            "exited": true
+        },
+        {
+            "deviceId": "5200e144fe37253b",
+            "name": "com.DefaultCompany.projectTest",
+            "processId": 8196,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
