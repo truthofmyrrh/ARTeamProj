@@ -4,7 +4,7 @@ Android-based AR shooting game
 
 ## Getting Started
 
-This project is a small project developed by three Ajou University students as a 'immersive media programming' class project.
+This project is a small project developed by three Ajou University students as a "Immersive Media Programming" class project.
 
 ### Prerequisites
 
